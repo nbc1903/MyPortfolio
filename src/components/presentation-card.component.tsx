@@ -5,7 +5,7 @@ import {ReactComponent as EmailLogo} from '../assets/email.svg';
 
 const PresentationCard = () => {
     return (
-        <header className='m-3 border rounded-lg flex flex-col items-center text-center pb-8 pt-6'>
+        <header className='border rounded-lg flex flex-col items-center text-center pb-8 pt-6 shadow-cyan-500 shadow-2xl'>
             <h1 className='text-3xl font-bold'> Nicolás Bolaños Castro</h1>
             {/* <img src='/src/assets/animoji-FA.webp' width='40px' height='40px'/> */}
             <h2 className='mt-3 text-xl font-semibold'> Web UI Developer </h2>
