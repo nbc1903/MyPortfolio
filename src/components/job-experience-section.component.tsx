@@ -21,10 +21,10 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({date, compan
             <h3 className='mb-2 text-sm font-semibold'>{jobTitle}</h3>
             <p className='text-sm text-gray-400 text-justify mb-2'>{duties}</p>
             <ul className='mb-4 list-disc list-inside text-sm text-gray-400'>
-                {achievements.map(achievement => <li>{achievement}</li>)}
+                {achievements.map((achievement, idx) => <li key={`${jobTitle}-achievement-${idx}`}>{achievement}</li>)}
             </ul>
             <div className='flex flex-wrap gap-2'>
-                {tags.map(tag => <ChipComponent text={tag} />)}
+                {tags.map((tag, idx) => <ChipComponent key={`${jobTitle}-tag-${idx}`} text={tag} />)}
             </div>
         </section>
     );
