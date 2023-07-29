@@ -1,29 +1,26 @@
-import { useEffect, useRef } from 'react';
-import { register } from 'swiper/element/bundle';
-import { SwiperOptions, Swiper as SwiperType } from 'swiper/types';
+import { useEffect, useRef } from "react";
+import { register } from "swiper/element/bundle";
+import { SwiperOptions, Swiper as SwiperType } from "swiper/types";
 
 interface SwiperProps extends SwiperOptions {
-     children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 type SwiperElement = HTMLElement & SwiperType;
 
 export function Swiper(props: SwiperProps) {
   const swiperRef = useRef<SwiperElement>(null);
-  const {
-    children,
-    ...rest
-  } = props;
+  const { children, ...rest } = props;
 
   useEffect(() => {
     register();
     const params = {
-      ...rest
+      ...rest,
     };
-    if(swiperRef.current){
-    Object.assign(swiperRef.current, params);
-    // @ts-expect-error
-    (swiperRef.current as SwiperType).initialize();
+    if (swiperRef.current) {
+      Object.assign(swiperRef.current, params);
+      // @ts-expect-error
+      (swiperRef.current as SwiperType).initialize();
     }
   }, []);
 
@@ -35,18 +32,11 @@ export function Swiper(props: SwiperProps) {
 }
 
 interface SwiperSlideProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 export function SwiperSlide(props: SwiperSlideProps) {
-  const {
-    children,
-    ...rest
-  } = props;
+  const { children, ...rest } = props;
 
-  return (
-    <swiper-slide {...rest}>
-      {children}
-    </swiper-slide>
-  );
+  return <swiper-slide {...rest}>{children}</swiper-slide>;
 }
