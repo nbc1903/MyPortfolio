@@ -26,7 +26,7 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
       </div>
 
       <h3 className="mb-2 text-sm font-semibold">{jobTitle}</h3>
-      <p className="text-sm text-gray-400 text-justify mb-2">{duties}</p>
+      <p className="text-sm text-gray-400 mb-2">{duties}</p>
       <ul className="mb-4 list-disc list-inside text-sm text-gray-400">
         {achievements.map((achievement, idx) => (
           <li key={`${jobTitle}-achievement-${idx}`}>{achievement}</li>
