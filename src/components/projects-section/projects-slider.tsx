@@ -1,49 +1,47 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
-import { projects } from "../data/projects";
+import { projects } from "../../data/projects";
 import { Carousel } from "react-responsive-carousel";
 import ProjectSection from "./project-section.component";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
-import useCurrentBreakpoint from "../hooks/useCurrentBreakpoint";
-interface ProjectsSliderProps {}
+import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
+interface ProjectsSliderProps {
+  id: string;
+}
 
-const ProjectsSlider: React.FC<ProjectsSliderProps> = ({}) => {
+const ProjectsSlider: React.FC<ProjectsSliderProps> = ({ id }) => {
   const [activeSlideIdx, setActiveSlideIdx] = useState<number>(0);
   const { isMobile, isTablet, isTabletLarge } = useCurrentBreakpoint();
 
   const renderCarouselArrow =
     (type: "next" | "prev") =>
     (onClickHandle: () => void, hasNextOrPrev: boolean, label: string) => {
+      if (!hasNextOrPrev) return;
       const isNext = type === "next";
       const Icon = isNext ? ChevronRightIcon : ChevronLeftIcon;
-      const positionClass = isNext ? "right-0 " : "left-0 ";
-      let hoverClass = hasNextOrPrev
-        ? "hover:bg-gray-200 hover:scale-110 transition-all"
-        : "opacity-50";
-      hoverClass += hasNextOrPrev
-        ? isNext
-          ? " hover:right-1"
-          : " hover:left-1"
-        : "";
+      const positionClass = isNext
+        ? "right-0 hover:right-1 "
+        : "left-0 hover:left-1";
+
       return (
         <button
           onClick={onClickHandle}
           disabled={!hasNextOrPrev}
           title={label}
-          className={`w-8 h-8 p-1 bg-white text-gray-800 rounded-full absolute top-[calc(50%-40px)] z-10 ${positionClass} ${hoverClass}`}
+          className={`${positionClass} w-8 h-8 p-1 opacity-50 bg-white text-gray-800 rounded-full absolute top-[calc(50%-40px)] z-10 hover:opacity-100 hover:scale-110 transition-all`}
         >
           <Icon />
         </button>
       );
     };
 
-  const RenderProjectSectionMap = useCallback(() => {
+  const renderProjectSectionMap = useCallback(() => {
     return projects.map((project, idx) => {
       const isSelected = activeSlideIdx === idx;
       const isNotSelectedClass = !isSelected ? `scale-90 opacity-40` : "";
       return (
         <div
           key={`${project.title}-project-${idx}`}
-          className={` mb-11 transition-all scale ${isNotSelectedClass}`}
+          className={`mb-11 transition-all scale ${isNotSelectedClass}`}
         >
           <ProjectSection {...project} isAvailable={isSelected} />
         </div>
@@ -66,20 +64,22 @@ const ProjectsSlider: React.FC<ProjectsSliderProps> = ({}) => {
   }, [isTabletLarge]);
 
   return (
-    <Carousel
-      showStatus={false}
-      showThumbs={false}
-      centerMode={true}
-      centerSlidePercentage={slidePercentage}
-      swipeScrollTolerance={20}
-      renderArrowNext={renderCarouselArrow("next")}
-      renderArrowPrev={renderCarouselArrow("prev")}
-      onChange={onCarouselChange}
-      onClickItem={onCarouselChange}
-      selectedItem={activeSlideIdx}
-    >
-      {RenderProjectSectionMap()}
-    </Carousel>
+    <section id={id} className="navigation_section">
+      <Carousel
+        showStatus={false}
+        showThumbs={false}
+        centerMode={true}
+        centerSlidePercentage={slidePercentage}
+        swipeScrollTolerance={20}
+        renderArrowNext={renderCarouselArrow("next")}
+        renderArrowPrev={renderCarouselArrow("prev")}
+        onChange={onCarouselChange}
+        onClickItem={onCarouselChange}
+        selectedItem={activeSlideIdx}
+      >
+        {renderProjectSectionMap()}
+      </Carousel>
+    </section>
   );
 };
 
