@@ -9,7 +9,7 @@ const HeaderMenu = () => {
   const [selectedMenuTitle, setSelectedMenuTitle] = useState<string>("home");
   const scrollDirection = useScrollDirection();
   const screenWidth = useScreenResize();
-
+  console.log("scrollDirection", scrollDirection);
   const moveMenuSelectBackdrop = () => {
     if (menuSelectBackdrop.current) {
       const selectedMenuElement = document.getElementById(
@@ -64,7 +64,7 @@ const HeaderMenu = () => {
 
   return (
     <header
-      className={`sticky top-5 mb-5 transition-all duration-300 ${
+      className={`sticky mb-5 transition-all duration-300 ${
         scrollDirection == "down" ? "-top-16" : "top-5"
       }`}
     >
