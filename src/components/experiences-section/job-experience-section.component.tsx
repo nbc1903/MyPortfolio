@@ -1,5 +1,5 @@
 import React from "react";
-import ChipComponent from "./shared/chip.component";
+import ChipComponent from "../shared/chip.component";
 
 interface JobExperienceSectionProps {
   date: string;

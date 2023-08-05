@@ -14,14 +14,8 @@ const MenuButton: React.FC<MenuButtonProps> = ({
   onClick,
 }) => {
   return (
-    <a
-      id={`menu-button-${title}`}
-      onClick={onClick}
-      title={title}
-      href={href}
-      className="w-5 h-5 hover:text-cyan-500"
-    >
-      <Icon className="w-5 pointer-events-none" />
+    <a id={`menu-button-${title}`} onClick={onClick} title={title} href={href}>
+      <Icon className="w-5 h-5 pointer-events-none" />
     </a>
   );
 };

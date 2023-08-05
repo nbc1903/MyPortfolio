@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { projects } from "../../data/projects";
 import { Carousel } from "react-responsive-carousel";
 import ProjectSection from "./project-section.component";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
-interface ProjectsSliderProps {
-  id: string;
-}
+import SectionTitle from "../shared/section-title.component";
 
-const ProjectsSlider: React.FC<ProjectsSliderProps> = ({ id }) => {
+const ProjectsSlider = () => {
   const [activeSlideIdx, setActiveSlideIdx] = useState<number>(0);
   const { isMobile, isTablet, isTabletLarge } = useCurrentBreakpoint();
 
@@ -64,7 +62,8 @@ const ProjectsSlider: React.FC<ProjectsSliderProps> = ({ id }) => {
   }, [isTabletLarge]);
 
   return (
-    <section id={id} className="navigation_section">
+    <section id="projects" className="navigation_section">
+      <SectionTitle title="Personal Projects" />
       <Carousel
         showStatus={false}
         showThumbs={false}

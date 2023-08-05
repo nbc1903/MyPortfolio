@@ -9,7 +9,7 @@ const HeaderMenu = () => {
   const [selectedMenuTitle, setSelectedMenuTitle] = useState<string>("home");
   const scrollDirection = useScrollDirection();
   const screenWidth = useScreenResize();
-  console.log("scrollDirection", scrollDirection);
+
   const moveMenuSelectBackdrop = () => {
     if (menuSelectBackdrop.current) {
       const selectedMenuElement = document.getElementById(
@@ -55,26 +55,25 @@ const HeaderMenu = () => {
     moveMenuSelectBackdrop();
   }, [selectedMenuTitle, screenWidth]);
 
-  const menuItemSelect =
-    (selectedMenuTitle: string) =>
-    (event: React.MouseEvent<HTMLAnchorElement>) => {
-      console.log(event);
-      setSelectedMenuTitle(selectedMenuTitle);
-    };
+  const menuItemSelect = (selectedMenuTitle: string) => () => {
+    setSelectedMenuTitle(selectedMenuTitle);
+  };
 
   return (
     <header
-      className={`sticky mb-5 transition-all duration-300 ${
+      className={`sticky mb-16 transition-all duration-300 z-30 ${
         scrollDirection == "down" ? "-top-16" : "top-5"
       }`}
     >
-      <nav className="p-5 border rounded-full bg-gray-800">
+      <nav className="p-5 border rounded-full shadow-neon bg-gray-800">
         <ul className="flex justify-evenly gap-2">
           {menuItems.map((menuItem) => (
             <li
               key={`menu-${menuItem.title}`}
               className={`z-20 ${
-                selectedMenuTitle === menuItem.title ? "text-gray-800" : ""
+                selectedMenuTitle === menuItem.title
+                  ? "pointer-events-none [&_svg]:drop-shadow-neon"
+                  : "hover:scale-125 transition-all hover:text-cyan-500"
               }`}
             >
               <MenuButton
@@ -90,7 +89,7 @@ const HeaderMenu = () => {
       <div
         ref={menuSelectBackdrop}
         className={`
-          absolute bg-white rounded-full
+          absolute border border-cyan-100 rounded-full
           translate-x-[calc(var(--left)-25px)]
           left-0 top-4
           w-[30px] h-[30px]

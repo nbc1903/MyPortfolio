@@ -1,21 +1,21 @@
 import HeaderMenu from "./components/header-menu/header-menu.components";
-import JobExperienceSection from "./components/job-experience-section.component";
-import PresentationCard from "./components/presentation-card.component";
+import JobExperienceSection from "./components/experiences-section/job-experience-section.component";
+import PresentationCard from "./components/presentation-card/presentation-card.component";
 import ProjectsSlider from "./components/projects-section/projects-slider";
 import { experiences } from "./data/experiences";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import JobExperiencesList from "./components/experiences-section/job-experiences-list.component";
+import SectionTitle from "./components/shared/section-title.component";
 
 function App() {
   return (
     <>
       <HeaderMenu />
-      <PresentationCard id="home" />
-      <div id="experience" className="navigation_section mt-10">
-        {experiences.map((experience, idx) => (
-          <JobExperienceSection key={`job-${idx}`} {...experience} />
-        ))}
-      </div>
-      <ProjectsSlider id="projects" />
+      <main className="flex flex-col gap-20">
+        <PresentationCard />
+        <JobExperiencesList />
+        <ProjectsSlider />
+      </main>
     </>
   );
 }

@@ -14,11 +14,11 @@ export const menuItems = [
     title: "home",
     icon: HomeIcon,
   },
-  {
-    href: "#personal",
-    title: "personal",
-    icon: UserIcon,
-  },
+  // {
+  //   href: "#personal",
+  //   title: "personal",
+  //   icon: UserIcon,
+  // },
   {
     href: "#experience",
     title: "experience",
@@ -29,19 +29,19 @@ export const menuItems = [
     title: "projects",
     icon: CodeBracketSquareIcon,
   },
-  {
-    href: "#studies",
-    title: "studies",
-    icon: AcademicCapIcon,
-  },
-  {
-    href: "#contact",
-    title: "contact",
-    icon: ChatBubbleLeftEllipsisIcon,
-  },
-  {
-    href: "#lang",
-    title: "lang",
-    icon: LanguageIcon,
-  },
+  // {
+  //   href: "#studies",
+  //   title: "studies",
+  //   icon: AcademicCapIcon,
+  // },
+  // {
+  //   href: "#contact",
+  //   title: "contact",
+  //   icon: ChatBubbleLeftEllipsisIcon,
+  // },
+  // {
+  //   href: "#lang",
+  //   title: "lang",
+  //   icon: LanguageIcon,
+  // },
 ];
