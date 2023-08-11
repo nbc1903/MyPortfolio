@@ -1,10 +1,10 @@
 import {
-  AcademicCapIcon,
+  //AcademicCapIcon,
   BriefcaseIcon,
-  ChatBubbleLeftEllipsisIcon,
+  //ChatBubbleLeftEllipsisIcon,
   CodeBracketSquareIcon,
   HomeIcon,
-  LanguageIcon,
+  //LanguageIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
 
