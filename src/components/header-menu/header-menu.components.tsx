@@ -7,12 +7,16 @@ import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
 
 const HeaderMenu = () => {
   const menuSelectBackdrop = useRef<HTMLDivElement>(null);
-  const [selectedMenuTitle, setSelectedMenuTitle] = useState<string>("home");
+  const [selectedMenuTitle, setSelectedMenuTitle] = useState<string>("");
   const scrollDirection = useScrollDirection();
   const screenWidth = useScreenResize();
   const { isDesktopLarge, isDesktopExtraLarge } = useCurrentBreakpoint();
 
   const isUpDesktop = isDesktopLarge || isDesktopExtraLarge;
+
+  useEffect(() => {
+    setSelectedMenuTitle(!isUpDesktop ? "home" : "about");
+  }, [isUpDesktop]);
 
   const moveMenuSelectBackdrop = () => {
     if (menuSelectBackdrop.current) {
@@ -73,7 +77,7 @@ const HeaderMenu = () => {
     : "translate-x-[calc(var(--left)-25px)] left-0 top-4";
   return (
     <header
-      className={`sticky mb-16 transition-all duration-300 z-30 xl:h-screen xl:flex xl:items-center xl:fixed xl:right-5 ${
+      className={`sticky mb-16 transition-all duration-300 z-30 xl:h-screen xl:flex xl:items-center xl:fixed xl:right-5 xl:transition-none ${
         !isUpDesktop
           ? scrollDirection == "down"
             ? "-top-16"
@@ -83,8 +87,8 @@ const HeaderMenu = () => {
     >
       <nav className="p-5 border rounded-full shadow-neon bg-gray-800">
         <ul className="flex justify-evenly gap-2 xl:flex-col xl:gap-10 xl:py-10">
-          {menuItems.map((menuItem, idx) => {
-            if (isUpDesktop && idx === 0) return;
+          {menuItems.map((menuItem) => {
+            if (isUpDesktop && menuItem.title === "home") return;
             return (
               <li
                 key={`menu-${menuItem.title}`}

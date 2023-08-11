@@ -15,7 +15,7 @@ function App() {
     <>
       {!isUpDesktop && <HeaderMenu />}
       <PresentationCard />
-      <main className="flex flex-col gap-24 mt-24 xl:mt-0 xl:ml-[450px] xl:mr-32">
+      <main className="flex flex-col gap-24 mt-24 xl:mt-0 xl:ml-[28vw] xl:mr-32">
         <AboutSection />
         <JobExperiencesList />
         <ProjectsSlider />
