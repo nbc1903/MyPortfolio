@@ -4,11 +4,13 @@ import JobExperienceSection from "./job-experience-section.component";
 
 const JobExperiencesList = () => {
   return (
-    <div id="experience" className="navigation_section flex flex-col gap-10">
+    <div id="experience" className="navigation_section">
       <SectionTitle title="Job Experience" />
-      {experiences.map((experience, idx) => (
-        <JobExperienceSection key={`job-${idx}`} {...experience} />
-      ))}
+      <div className="flex flex-col gap-10">
+        {experiences.map((experience, idx) => (
+          <JobExperienceSection key={`job-${idx}`} {...experience} />
+        ))}
+      </div>
     </div>
   );
 };

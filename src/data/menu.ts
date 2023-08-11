@@ -14,11 +14,11 @@ export const menuItems = [
     title: "home",
     icon: HomeIcon,
   },
-  // {
-  //   href: "#personal",
-  //   title: "personal",
-  //   icon: UserIcon,
-  // },
+  {
+    href: "#about",
+    title: "about",
+    icon: UserIcon,
+  },
   {
     href: "#experience",
     title: "experience",
@@ -33,11 +33,6 @@ export const menuItems = [
   //   href: "#studies",
   //   title: "studies",
   //   icon: AcademicCapIcon,
-  // },
-  // {
-  //   href: "#contact",
-  //   title: "contact",
-  //   icon: ChatBubbleLeftEllipsisIcon,
   // },
   // {
   //   href: "#lang",

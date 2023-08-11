@@ -58,7 +58,7 @@ export const experiences = [
     duties:
       "Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.",
     achievements: [
-      "helped organize the work in the job",
+      "helped organize the work in the job very good because we had a lot of help from the team",
       "helped organize the work in the job",
       "helped organize the work in the job",
     ],

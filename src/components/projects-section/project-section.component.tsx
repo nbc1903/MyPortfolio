@@ -37,6 +37,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
   const titleLinkClass = isAvailable
     ? "transition-all duration-500 relative group-hover:text-cyan-500 before:content-[''] before:absolute before:top-full before:left-0 before:origin-left before:w-full before:h-[2px] before:bg-cyan-500 before:scale-0 before:transition-all before:duration-500 before:group-hover:scale-100"
     : "";
+
   return (
     <section className="group flex flex-col flex-grow hover:bg-gray-900 cursor-pointer rounded-lg p-5">
       <WithLink withLink={isAvailable}>
@@ -48,7 +49,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
         </div>
 
         <img className="mb-2 text-sm font-semibold rounded-md" src={image} />
-        <p className="text-sm text-gray-400 text-left mb-2">{description}</p>
+
+        <p className="text-sm text-gray-400 text-left mb-2 leading-normal">
+          {description}
+        </p>
 
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, idx) => (

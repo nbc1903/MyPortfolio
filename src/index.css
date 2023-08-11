@@ -7,5 +7,10 @@ html {
 }
 
 body {
-  @apply flex flex-col bg-gray-800 text-white p-5;
+  @apply flex flex-col bg-gradient-to-br from-gray-800 to-gray-850  text-white p-5 xl:py-20;
+  font-family: monospace;
+}
+
+.navigation_section {
+  @apply scroll-mt-24;
 }
