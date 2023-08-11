@@ -1,6 +1,8 @@
 import SectionTitle from "../shared/section-title.component";
 import { about } from "../../data/about";
 import TSIcon from "../../assets/typescript.svg";
+import JSIcon from "../../assets/javascript-js-square.svg";
+import ReactIcon from "../../assets/react.svg";
 
 const AboutSection = () => {
   return (
@@ -24,12 +26,12 @@ const AboutSection = () => {
         />
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="src\assets\react.svg"
+          src={ReactIcon}
           alt="react--v1"
         />
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="src\assets\javascript-js-square.svg"
+          src={JSIcon}
           alt="javascript--v1"
         />
       </div>
