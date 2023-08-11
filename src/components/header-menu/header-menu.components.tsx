@@ -69,7 +69,7 @@ const HeaderMenu = () => {
   };
 
   const menuSelectedBackdropStylePosition = isUpDesktop
-    ? "translate-y-[calc(var(--top)-560px)] right-4"
+    ? "translate-y-[calc(var(--top)-5px)] right-4 top-0"
     : "translate-x-[calc(var(--left)-25px)] left-0 top-4";
   return (
     <header
