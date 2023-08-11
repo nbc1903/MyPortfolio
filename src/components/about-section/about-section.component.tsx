@@ -18,17 +18,17 @@ const AboutSection = () => {
       <div className="flex justify-evenly gap-5 mt-12 mix-blend-soft-light opacity-50">
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="/src/assets/typescript.svg"
+          src="src\assets\typescript.svg"
           alt="typescript"
         />
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="/src/assets/react.svg"
+          src="src\assets\react.svg"
           alt="react--v1"
         />
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="/src/assets/javascript-js-square.svg"
+          src="src\assets\javascript-js-square.svg"
           alt="javascript--v1"
         />
       </div>

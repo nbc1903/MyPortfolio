@@ -15,7 +15,7 @@ const PresentationCard = () => {
         muted
         playsInline
       >
-        <source src="/src/assets/presentation-bg.mp4" type="video/mp4" />
+        <source src="src\assets\presentation-bg.mp4" type="video/mp4" />
       </video>
       <div className="flex flex-col justify-center h-full">
         <h1 className="text-4xl font-bold mt-3">Nicolás Bolaños Castro</h1>
