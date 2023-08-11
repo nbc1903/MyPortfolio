@@ -1,5 +1,6 @@
 import SectionTitle from "../shared/section-title.component";
 import { about } from "../../data/about";
+import TSIcon from "../../assets/typescript.svg";
 
 const AboutSection = () => {
   return (
@@ -18,7 +19,7 @@ const AboutSection = () => {
       <div className="flex justify-evenly gap-5 mt-12 mix-blend-soft-light opacity-50">
         <img
           className="flex-grow w-0 rounded-lg object-contain max-w-[40px]"
-          src="src\assets\typescript.svg"
+          src={TSIcon}
           alt="typescript"
         />
         <img
