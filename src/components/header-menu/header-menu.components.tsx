@@ -79,7 +79,7 @@ const HeaderMenu = () => {
     : "translate-x-[calc(var(--left)-25px)] left-0 top-4";
   return (
     <header
-      className={`sticky mb-16 transition-all duration-300 z-30 xl:h-screen xl:flex xl:items-center xl:fixed xl:right-10 ${
+      className={`sticky mb-16 transition-all duration-300 z-30 xl:h-screen xl:flex xl:items-center xl:transition-none xl:fixed xl:right-10 ${
         !isUpDesktop ? "top-5" : "top-0"
       }`}
     >
