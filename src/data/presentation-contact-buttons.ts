@@ -1,6 +1,6 @@
 import { ReactComponent as GithubLogo } from "../assets/github.svg";
 import { ReactComponent as LinkedInLogo } from "../assets/linkedin.svg";
-import { ReactComponent as EmailLogo } from "../assets/email.svg";
+//import { ReactComponent as EmailLogo } from "../assets/email.svg";
 
 export const presentationContactButtons = [
   {
@@ -12,10 +12,5 @@ export const presentationContactButtons = [
     title: "linkedin-link",
     href: "https://www.linkedin.com/in/nicolas-bolanos-castro",
     Icon: LinkedInLogo,
-  },
-  {
-    title: "mail-link",
-    href: "mailto:nicolas.bolanos97@gmail.com",
-    Icon: EmailLogo,
   },
 ];

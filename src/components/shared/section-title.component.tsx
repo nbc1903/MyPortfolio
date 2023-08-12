@@ -1,4 +1,5 @@
 import React from "react";
+import RevealAnimation from "./reveal-animation.component";
 
 interface SectionTitleProps {
   title: string;
@@ -6,9 +7,10 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
   return (
-    <div className="flex items-center mb-10">
-      <span
-        className={`
+    <RevealAnimation type="left">
+      <div className="flex items-center mb-10">
+        <span
+          className={`
           text-transparent
           font-extrabold text-2xl 
           bg-center
@@ -19,11 +21,12 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
           flex-shrink-0
           animate-sectionTitleBackground
         `}
-      >
-        {title}
-      </span>
-      <hr className="flex-grow ml-4 mt-2 [border-image:linear-gradient(to_right,#06b6d4,transparent)_1] border-2 rounded-full" />
-    </div>
+        >
+          {title}
+        </span>
+        <hr className="flex-grow ml-4 mt-2 [border-image:linear-gradient(to_right,#06b6d4,transparent)_1] border-2 rounded-full" />
+      </div>
+    </RevealAnimation>
   );
 };
 

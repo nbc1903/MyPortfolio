@@ -25,7 +25,7 @@ const ProjectsSlider = () => {
           onClick={onClickHandle}
           disabled={!hasNextOrPrev}
           title={label}
-          className={`${positionClass} w-8 h-8 p-1 opacity-50 bg-white text-gray-800 rounded-full absolute top-[calc(50%-40px)] z-10 hover:opacity-100 hover:scale-110 transition-all`}
+          className={`${positionClass} w-8 h-8 sm:w-10 sm:h-10 md:w-9 md:h-9 p-1 opacity-90 bg-white text-gray-800 rounded-full absolute top-[calc(50%-40px)] z-10 hover:opacity-100 hover:scale-110 transition-all`}
         >
           <Icon />
         </button>
@@ -35,11 +35,11 @@ const ProjectsSlider = () => {
   const renderProjectSectionMap = useCallback(() => {
     return projects.map((project, idx) => {
       const isSelected = activeSlideIdx === idx;
-      const isNotSelectedClass = !isSelected ? `scale-90 opacity-40` : "";
+      const isNotSelectedClass = !isSelected ? `scale-75 opacity-30` : "";
       return (
         <div
           key={`${project.title}-project-${idx}`}
-          className={`mb-11 transition-all scale ${isNotSelectedClass}`}
+          className={`mb-11 transition-all ${isNotSelectedClass}`}
         >
           <ProjectSection {...project} isAvailable={isSelected} />
         </div>

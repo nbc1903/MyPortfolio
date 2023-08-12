@@ -1,6 +1,7 @@
 import React from "react";
 import ChipComponent from "../shared/chip.component";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import RevealAnimation from "../shared/reveal-animation.component";
 
 interface ProjectSectionProps {
   title: string;
@@ -39,28 +40,33 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
     : "";
 
   return (
-    <section className="group flex flex-col flex-grow hover:bg-gray-900 cursor-pointer rounded-lg p-5">
-      <WithLink withLink={isAvailable}>
-        <div className="flex items-center mb-2">
-          <h2 className={`font-bold ${titleLinkClass}`}>{title}</h2>
-          {isAvailable && (
-            <ArrowUpRightIcon className="w-5 ml-1 group-hover:text-cyan-500 group-hover:scale-100 group-hover:[animation-delay:500ms] group-hover:animate-link transition-all duration-500 scale-0 origin-bottom-left" />
-          )}
-        </div>
+    <RevealAnimation type="down">
+      <section className="group flex flex-col flex-grow hover:bg-gray-900 cursor-pointer rounded-lg p-5">
+        <WithLink withLink={isAvailable}>
+          <div className="flex items-center mb-2">
+            <h2 className={`font-bold ${titleLinkClass}`}>{title}</h2>
+            {isAvailable && (
+              <ArrowUpRightIcon className="w-5 ml-1 group-hover:text-cyan-500 group-hover:scale-100 group-hover:[animation-delay:500ms] group-hover:animate-link transition-all duration-500 scale-0 origin-bottom-left" />
+            )}
+          </div>
 
-        <img className="mb-2 text-sm font-semibold rounded-md" src={image} />
+          <img className="mb-2 text-sm font-semibold rounded-md" src={image} />
 
-        <p className="text-sm text-gray-400 text-left mb-2 leading-normal">
-          {description}
-        </p>
+          <p className="text-sm text-gray-400 text-left mb-4 leading-normal">
+            {description}
+          </p>
 
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag, idx) => (
-            <ChipComponent key={`${title}-tag-${idx}`} text={tag} />
-          ))}
-        </div>
-      </WithLink>
-    </section>
+          <div className="flex flex-wrap gap-2">
+            <span className="self-center text-brandColors-text">
+              Developed with:
+            </span>
+            {tags.map((tag, idx) => (
+              <ChipComponent key={`${title}-tag-${idx}`} text={tag} />
+            ))}
+          </div>
+        </WithLink>
+      </section>
+    </RevealAnimation>
   );
 };
 
