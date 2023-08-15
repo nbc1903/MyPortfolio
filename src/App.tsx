@@ -8,6 +8,7 @@ import useCurrentBreakpoint from "./hooks/useCurrentBreakpoint";
 import "./config/i18next.config";
 import { Suspense } from "react";
 import Loader from "./components/shared/loader.component";
+import FooterSection from "./components/footer-section/footer-section.component";
 
 function App() {
   const { isDesktopLarge, isDesktopExtraLarge } = useCurrentBreakpoint();
@@ -24,6 +25,7 @@ function App() {
         <AboutSection />
         <JobExperiencesList />
         <ProjectsSlider />
+        <FooterSection />
       </main>
       {isUpDesktop && <HeaderMenu />}
     </Suspense>

@@ -5,6 +5,8 @@ import ProjectSection from "./project-section.component";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
 import SectionTitle from "../shared/section-title.component";
+import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
+import RevealAnimation from "../shared/reveal-animation.component";
 
 const ProjectsSlider = () => {
   const [activeSlideIdx, setActiveSlideIdx] = useState<number>(0);
@@ -63,21 +65,23 @@ const ProjectsSlider = () => {
 
   return (
     <section id="projects" className="navigation_section">
-      <SectionTitle title="Personal Projects" />
-      <Carousel
-        showStatus={false}
-        showThumbs={false}
-        centerMode={true}
-        centerSlidePercentage={slidePercentage}
-        swipeScrollTolerance={20}
-        renderArrowNext={renderCarouselArrow("next")}
-        renderArrowPrev={renderCarouselArrow("prev")}
-        onChange={onCarouselChange}
-        onClickItem={onCarouselChange}
-        selectedItem={activeSlideIdx}
-      >
-        {renderProjectSectionMap()}
-      </Carousel>
+      <SectionTitle Icon={CodeBracketSquareIcon} title="Personal Projects" />
+      <RevealAnimation type="down">
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          centerMode={true}
+          centerSlidePercentage={slidePercentage}
+          swipeScrollTolerance={20}
+          renderArrowNext={renderCarouselArrow("next")}
+          renderArrowPrev={renderCarouselArrow("prev")}
+          onChange={onCarouselChange}
+          onClickItem={onCarouselChange}
+          selectedItem={activeSlideIdx}
+        >
+          {renderProjectSectionMap()}
+        </Carousel>
+      </RevealAnimation>
     </section>
   );
 };

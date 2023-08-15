@@ -3,24 +3,26 @@ import RevealAnimation from "./reveal-animation.component";
 
 interface SectionTitleProps {
   title: string;
+  Icon: React.ElementType;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
+const SectionTitle: React.FC<SectionTitleProps> = ({ title, Icon }) => {
   return (
     <RevealAnimation type="left">
       <div className="flex items-center mb-10">
+        <Icon className="w-4 mr-2 text-cyan-200" />
         <span
           className={`
-          text-transparent
-          font-extrabold text-2xl 
-          bg-center
-          bg-cyan-500
-          bg-clip-text
-          [background-size:60%_auto]
-          bg-[url("/src/assets/title-bg.svg")]
-          flex-shrink-0
-          animate-sectionTitleBackground
-        `}
+              text-transparent
+              font-extrabold text-2xl 
+              bg-center
+              bg-cyan-500
+              bg-clip-text
+              [background-size:60%_auto]
+              bg-[url("/src/assets/title-bg.svg")]
+              flex-shrink-0
+              animate-sectionTitleBackground
+            `}
         >
           {title}
         </span>

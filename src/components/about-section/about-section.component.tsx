@@ -4,6 +4,7 @@ import SectionTitle from "../shared/section-title.component";
 // import ReactIcon from "../../assets/react.svg";
 import { useTranslation } from "react-i18next";
 import RevealAnimation from "../shared/reveal-animation.component";
+import { UserIcon } from "@heroicons/react/24/outline";
 
 const AboutSection = () => {
   const { t } = useTranslation("translation");
@@ -11,7 +12,7 @@ const AboutSection = () => {
   return (
     <RevealAnimation type="down">
       <section id="about" className="navigation_section">
-        <SectionTitle title="About me" />
+        <SectionTitle Icon={UserIcon} title="About me" />
 
         <div className="flex flex-col gap-4 lg:flex-1 lg:">
           {(t("content", { returnObjects: true }) as string[]).map(

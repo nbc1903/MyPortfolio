@@ -117,12 +117,12 @@ const HeaderMenu = () => {
           <div
             ref={menuSelectBackdrop}
             className={`
-          absolute border border-cyan-100 rounded-full
-          ${menuSelectedBackdropStylePosition}
-          w-[30px] h-[30px]
-          transition-all duration-300
-          ease-in-out z-10
-        `}
+              absolute border border-cyan-100 rounded-full
+              ${menuSelectedBackdropStylePosition}
+              w-[30px] h-[30px]
+              transition-all duration-300
+              ease-in-out z-10
+            `}
           ></div>
         </>
       </RevealAnimation>
