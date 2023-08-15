@@ -37,7 +37,7 @@ const LanguageButton = () => {
   return (
     <>
       <button
-        className="relative w-10 h-5 xl:w-5 xl:h-10 rounded-full bg-gray-900 border flex items-center xl:flex-col transition duration-300 focus:outline-none shadow"
+        className="relative flex h-5 w-10 items-center rounded-full border bg-gray-900 shadow transition duration-300 focus:outline-none xl:h-10 xl:w-5 xl:flex-col"
         onClick={toggleTheme}
       >
         <p
@@ -46,7 +46,7 @@ const LanguageButton = () => {
           {isEnglish ? "EN" : "ES"}
         </p>
         <div
-          className={`w-6 h-6 relative rounded-full transition duration-500 transform p-1 text-white ${buttonTranslateClass}`}
+          className={`relative h-6 w-6 transform rounded-full p-1 text-white transition duration-500 ${buttonTranslateClass}`}
         >
           <img
             id="ukImg"

@@ -27,7 +27,7 @@ const ProjectsSlider = () => {
           onClick={onClickHandle}
           disabled={!hasNextOrPrev}
           title={label}
-          className={`${positionClass} w-8 h-8 sm:w-10 sm:h-10 md:w-9 md:h-9 p-1 opacity-90 bg-white text-gray-800 rounded-full absolute top-[calc(50%-40px)] z-10 hover:opacity-100 hover:scale-110 transition-all`}
+          className={`${positionClass} absolute top-[calc(50%-40px)] z-10 h-8 w-8 rounded-full bg-white p-1 text-gray-800 opacity-90 transition-all hover:scale-110 hover:opacity-100 sm:h-10 sm:w-10 md:h-9 md:w-9`}
         >
           <Icon />
         </button>

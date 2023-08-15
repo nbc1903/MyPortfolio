@@ -39,18 +39,18 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
     : "";
 
   return (
-    <section className="group flex flex-col flex-grow hover:bg-gray-900 cursor-pointer rounded-lg p-5">
+    <section className="group flex flex-grow cursor-pointer flex-col rounded-lg p-5 hover:bg-gray-900">
       <WithLink withLink={isAvailable}>
-        <div className="flex items-center mb-2">
+        <div className="mb-2 flex items-center">
           <h2 className={`font-bold ${titleLinkClass}`}>{title}</h2>
           {isAvailable && (
-            <ArrowUpRightIcon className="w-5 ml-1 group-hover:text-cyan-500 group-hover:scale-100 group-hover:[animation-delay:500ms] group-hover:animate-link transition-all duration-500 scale-0 origin-bottom-left" />
+            <ArrowUpRightIcon className="ml-1 w-5 origin-bottom-left scale-0 transition-all duration-500 group-hover:scale-100 group-hover:animate-link group-hover:text-cyan-500 group-hover:[animation-delay:500ms]" />
           )}
         </div>
 
-        <img className="mb-2 text-sm font-semibold rounded-md" src={image} />
+        <img className="mb-2 rounded-md text-sm font-semibold" src={image} />
 
-        <p className="text-sm text-gray-400 text-left mb-4 leading-normal">
+        <p className="mb-4 text-left text-sm leading-normal text-gray-400">
           {description}
         </p>
 

@@ -14,16 +14,16 @@ const AboutSection = () => {
       <section id="about" className="navigation_section">
         <SectionTitle Icon={UserIcon} title="About me" />
 
-        <div className="flex flex-col gap-4 lg:flex-1 lg:">
+        <div className="flex flex-col gap-4 lg:flex-1">
           {(t("content", { returnObjects: true }) as string[]).map(
             (paragraph, idx) => (
               <p
                 key={`paragraph-$${idx}`}
-                className="text-sm text-brandColors-text leading-normal"
+                className="text-sm leading-normal text-brandColors-text"
               >
                 {paragraph}
               </p>
-            )
+            ),
           )}
         </div>
       </section>

@@ -9,24 +9,24 @@ interface SectionTitleProps {
 const SectionTitle: React.FC<SectionTitleProps> = ({ title, Icon }) => {
   return (
     <RevealAnimation type="left">
-      <div className="flex items-center mb-10">
-        <Icon className="w-4 mr-2 text-cyan-200" />
+      <div className="mb-10 flex items-center">
+        <Icon className="mr-2 w-4 text-cyan-200" />
         <span
           className={`
-              text-transparent
-              font-extrabold text-2xl 
-              bg-center
-              bg-cyan-500
-              bg-clip-text
-              [background-size:60%_auto]
-              bg-[url("/src/assets/title-bg.svg")]
               flex-shrink-0
-              animate-sectionTitleBackground
+              animate-sectionTitleBackground bg-cyan-500 
+              bg-[url("/src/assets/title-bg.svg")]
+              bg-clip-text
+              bg-center
+              text-2xl
+              font-extrabold
+              text-transparent
+              [background-size:60%_auto]
             `}
         >
           {title}
         </span>
-        <hr className="flex-grow ml-4 mt-2 [border-image:linear-gradient(to_right,#06b6d4,transparent)_1] border-2 rounded-full" />
+        <hr className="ml-4 mt-2 flex-grow rounded-full border-2 [border-image:linear-gradient(to_right,#06b6d4,transparent)_1]" />
       </div>
     </RevealAnimation>
   );

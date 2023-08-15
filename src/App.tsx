@@ -21,7 +21,7 @@ function App() {
 
       <PresentationCard />
 
-      <main className="flex flex-col gap-24 mt-24 xl:mt-0 xl:ml-[28vw] xl:mr-36">
+      <main className="mt-24 flex flex-col gap-24 xl:ml-[28vw] xl:mr-36 xl:mt-0">
         <AboutSection />
         <JobExperiencesList />
         <ProjectsSlider />

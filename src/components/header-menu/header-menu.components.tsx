@@ -23,7 +23,7 @@ const HeaderMenu = () => {
   const moveMenuSelectBackdrop = () => {
     if (menuSelectBackdrop.current) {
       const selectedMenuElement = document.getElementById(
-        `menu-button-${selectedMenuTitle}`
+        `menu-button-${selectedMenuTitle}`,
       );
       if (selectedMenuElement) {
         const { left, top } = selectedMenuElement.getBoundingClientRect();
@@ -56,7 +56,7 @@ const HeaderMenu = () => {
               setSelectedMenuTitle(navigationSection.id);
             }
           }
-        }
+        },
       );
     };
 
@@ -79,13 +79,13 @@ const HeaderMenu = () => {
     : "translate-x-[calc(var(--left)-25px)] left-0 top-4";
   return (
     <header
-      className={`sticky mb-16 transition-all duration-300 z-30 xl:h-screen xl:flex xl:items-center xl:transition-none xl:fixed xl:right-10 ${
+      className={`sticky z-30 mb-16 transition-all duration-300 xl:fixed xl:right-10 xl:flex xl:h-screen xl:items-center xl:transition-none ${
         !isUpDesktop ? "top-5" : "top-0"
       }`}
     >
       <RevealAnimation type={"opacity"}>
         <>
-          <nav className="p-5 border rounded-full shadow-neon bg-gray-800">
+          <nav className="rounded-full border bg-gray-800 p-5 shadow-neon">
             <ul className="flex justify-evenly gap-2 xl:flex-col xl:gap-10 xl:py-10">
               {menuItems.map((menuItem) => {
                 if (isUpDesktop && menuItem.title === "home") return;
@@ -95,7 +95,7 @@ const HeaderMenu = () => {
                     className={`z-20 ${
                       selectedMenuTitle === menuItem.title
                         ? "pointer-events-none [&_svg]:drop-shadow-neon"
-                        : "hover:scale-125 transition-all hover:text-cyan-500"
+                        : "transition-all hover:scale-125 hover:text-cyan-500"
                     }`}
                   >
                     <MenuButton
@@ -117,11 +117,11 @@ const HeaderMenu = () => {
           <div
             ref={menuSelectBackdrop}
             className={`
-              absolute border border-cyan-100 rounded-full
+              absolute rounded-full border border-cyan-100
               ${menuSelectedBackdropStylePosition}
-              w-[30px] h-[30px]
-              transition-all duration-300
-              ease-in-out z-10
+              z-10 h-[30px]
+              w-[30px] transition-all
+              duration-300 ease-in-out
             `}
           ></div>
         </>

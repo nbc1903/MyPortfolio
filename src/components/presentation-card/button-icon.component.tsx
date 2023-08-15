@@ -10,7 +10,7 @@ const ButtonIcon: React.FC<ButtonIconProps> = ({ href, Icon, title }) => {
   return (
     <a
       href={href}
-      className="group rounded-full p-2 hover:scale-110 hover:rotate-12 transition-transform"
+      className="group rounded-full p-2 transition-transform hover:rotate-12 hover:scale-110"
       target="_blank"
       rel="noopener noreferrer"
       title={title}

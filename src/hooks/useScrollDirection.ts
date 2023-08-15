@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useScrollDirection = () => {
   const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(
-    null
+    null,
   );
 
   useEffect(() => {

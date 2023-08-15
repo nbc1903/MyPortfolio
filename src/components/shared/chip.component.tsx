@@ -7,8 +7,8 @@ interface ChipComponentProps {
 const ChipComponent: React.FC<ChipComponentProps> = ({ text }) => {
   return (
     <div
-      className="bg-brandColors-contrast text-brandColors-main font-bold rounded-full px-3 py-0.5 text-xs
-        flex items-center leading-5"
+      className="flex items-center rounded-full bg-brandColors-contrast px-3 py-0.5 text-xs
+        font-bold leading-5 text-brandColors-main"
     >
       {text}
     </div>

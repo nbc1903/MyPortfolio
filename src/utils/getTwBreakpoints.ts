@@ -11,8 +11,8 @@ export const getBreakpointValue = (value: string): number | undefined => {
     ]?.slice(
       0,
       (fullConfig.theme.screens as KeyValuePair<string, string>)[value].indexOf(
-        "px"
-      )
+        "px",
+      ),
     );
   }
 };
@@ -21,7 +21,7 @@ export const getCurrentBreakpoint = (): string => {
   let currentBreakpoint = "xsm";
   if (fullConfig.theme && fullConfig.theme.screens) {
     for (const breakpoint of Object.keys(
-      fullConfig.theme.screens as KeyValuePair<string, string>
+      fullConfig.theme.screens as KeyValuePair<string, string>,
     )) {
       const breakpointValue = getBreakpointValue(breakpoint);
       if (breakpointValue) {

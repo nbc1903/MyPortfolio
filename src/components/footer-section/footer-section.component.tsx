@@ -1,6 +1,6 @@
 const FooterSection = () => {
   return (
-    <footer className="text-xs flex flex-col items-center text-brandColors-text gap-1 text-center">
+    <footer className="flex flex-col items-center gap-1 text-center text-xs text-brandColors-text">
       <p>Designed and Built By Nicolás Bolaños - 2023</p>
       <div>
         <a

@@ -23,21 +23,21 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
     <RevealAnimation type="down">
       <section className="flex flex-col">
         <div className="flex items-center">
-          <h2 className="font-bold text-lg">{company}</h2>
-          <p className="ml-auto text-brandColors-text text-xs font-semibold">
+          <h2 className="text-lg font-bold">{company}</h2>
+          <p className="ml-auto text-xs font-semibold text-brandColors-text">
             {date}
           </p>
         </div>
 
         <h3 className="mb-2 text-sm font-semibold">{jobTitle}</h3>
-        <p className="text-sm text-brandColors-text mb-2 leading-normal">
+        <p className="mb-2 text-sm leading-normal text-brandColors-text">
           {duties}
         </p>
         <ul className="mb-4 text-sm text-brandColors-text">
           {achievements.map((achievement, idx) => (
             <li
               key={`${jobTitle}-achievement-${idx}`}
-              className="mb-1 pl-5 relative before:content-['➮'] before:text-lg before:absolute before:left-0 before:-top-1 before:text-cyan-500"
+              className="relative mb-1 pl-5 before:absolute before:-top-1 before:left-0 before:text-lg before:text-cyan-500 before:content-['➮']"
             >
               {achievement}
             </li>
