@@ -1,7 +1,7 @@
 const FooterSection = () => {
   return (
     <footer className="text-xs flex flex-col items-center text-brandColors-text gap-1 text-center">
-      <p>Designed and Built By Nicolás Bolaños</p>
+      <p>Designed and Built By Nicolás Bolaños - 2023</p>
       <div>
         <a
           className="hover:text-cyan-500"
