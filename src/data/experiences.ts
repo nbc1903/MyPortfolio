@@ -70,6 +70,6 @@ export const experiences = [
       "Gathering of requirements for a test protocols digitization project.",
       "Creation of a SQL server database for the test protocols digitization project requirements.",
     ],
-    tags: ["Xamarin", "C#", ".NET", "MVC", "architecture"],
+    tags: ["Xamarin", "C#", ".NET", "MVC architecture"],
   },
 ];
