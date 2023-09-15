@@ -7,7 +7,7 @@ interface JobExperienceSectionProps {
   company: string;
   jobTitle: string;
   duties: string;
-  achievements: string[];
+  achievements?: string[];
   tags: string[];
 }
 
@@ -33,16 +33,19 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
         <p className="mb-2 text-sm leading-normal text-brandColors-text">
           {duties}
         </p>
-        <ul className="mb-4 text-sm text-brandColors-text">
-          {achievements.map((achievement, idx) => (
-            <li
-              key={`${jobTitle}-achievement-${idx}`}
-              className="relative mb-1 pl-5 before:absolute before:-top-1 before:left-0 before:text-lg before:text-cyan-500 before:content-['➮']"
-            >
-              {achievement}
-            </li>
-          ))}
-        </ul>
+        {achievements && (
+          <ul className="mb-4 text-sm text-brandColors-text">
+            {achievements.map((achievement, idx) => (
+              <li
+                key={`${jobTitle}-achievement-${idx}`}
+                className="relative mb-1 pl-5 before:absolute before:-top-1 before:left-0 before:text-lg before:text-cyan-500 before:content-['➮']"
+              >
+                {achievement}
+              </li>
+            ))}
+          </ul>
+        )}
+
         <div className="flex flex-wrap gap-2">
           <span className="self-center text-brandColors-text">
             Worked with:

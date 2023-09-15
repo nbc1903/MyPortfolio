@@ -54,10 +54,11 @@ const ProjectsSlider = () => {
   };
 
   const slidePercentage = useMemo(() => {
+    const desktopPercentage = projects.length < 3 ? 50 : 33.33;
     if (isMobile || isTablet) return 100;
-    if (isTabletLarge) return 33.33;
-    else return 33.33;
-  }, [isMobile, isTablet, isTabletLarge]);
+    if (isTabletLarge) return desktopPercentage;
+    else return desktopPercentage;
+  }, [isMobile, isTablet, isTabletLarge, projects]);
 
   useEffect(() => {
     setActiveSlideIdx(0);

@@ -1,10 +1,7 @@
 import {
-  //AcademicCapIcon,
   BriefcaseIcon,
-  //ChatBubbleLeftEllipsisIcon,
   CodeBracketSquareIcon,
   HomeIcon,
-  //LanguageIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
 
@@ -29,14 +26,4 @@ export const menuItems = [
     title: "projects",
     icon: CodeBracketSquareIcon,
   },
-  // {
-  //   href: "#studies",
-  //   title: "studies",
-  //   icon: AcademicCapIcon,
-  // },
-  // {
-  //   href: "#lang",
-  //   title: "lang",
-  //   icon: LanguageIcon,
-  // },
 ];
