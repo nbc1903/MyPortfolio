@@ -1,6 +1,8 @@
 import React from "react";
 import ChipComponent from "../shared/chip.component";
 import RevealAnimation from "../shared/reveal-animation.component";
+import useCurrentLanguage from "../../hooks/useCurrentLanguage";
+import { experiencesSectionConstants } from "./constants/experiences-section-constants";
 
 interface JobExperienceSectionProps {
   date: string;
@@ -19,6 +21,8 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
   achievements,
   tags,
 }) => {
+  const { currentLanguage } = useCurrentLanguage();
+  const { tagsLabel } = experiencesSectionConstants[currentLanguage];
   return (
     <RevealAnimation type="down">
       <section className="flex flex-col">
@@ -47,9 +51,7 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
         )}
 
         <div className="flex flex-wrap gap-2">
-          <span className="self-center text-brandColors-text">
-            Worked with:
-          </span>
+          <span className="self-center text-brandColors-text">{tagsLabel}</span>
           {tags.map((tag, idx) => (
             <ChipComponent key={`${jobTitle}-tag-${idx}`} text={tag} />
           ))}

@@ -1,19 +1,18 @@
-import { useState } from "react";
 import spainImg from "../../assets/spain.png";
 import ukImg from "../../assets/united-kingdom.png";
 import { useTranslation } from "react-i18next";
 import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
+import useCurrentLanguage from "../../hooks/useCurrentLanguage";
 
 const LanguageButton = () => {
   const { isDesktopLarge, isDesktopExtraLarge } = useCurrentBreakpoint();
   const isUpDesktop = isDesktopLarge || isDesktopExtraLarge;
   const { i18n } = useTranslation();
-  const [isEnglish, setIsEnglish] = useState<boolean>(i18n.language === "en");
+  const { isEnglish } = useCurrentLanguage();
   let buttonTranslateClass;
   let lngTextTranslateClass;
   function toggleTheme() {
     i18n.changeLanguage(isEnglish ? "es" : "en");
-    setIsEnglish((prev) => !prev);
   }
 
   if (isUpDesktop) {
@@ -54,6 +53,7 @@ const LanguageButton = () => {
               !isEnglish && "opacity-0"
             }`}
             src={ukImg}
+            alt={isEnglish ? "United Kingdom flag" : "bandera de Reino Unido"}
           />
           <img
             id="colImg"
@@ -61,6 +61,7 @@ const LanguageButton = () => {
               isEnglish && "opacity-0"
             }`}
             src={spainImg}
+            alt={isEnglish ? "Spain flag" : "bandera de España"}
           />
         </div>
       </button>

@@ -2,8 +2,13 @@ import { presentationContactButtons } from "../../data/presentation-contact-butt
 import ButtonIcon from "./button-icon.component";
 import BackgroundVideo from "../../assets/presentation-bg.mp4";
 import RevealAnimation from "../shared/reveal-animation.component";
+import useCurrentLanguage from "../../hooks/useCurrentLanguage";
+import { presentationCardConstants } from "./constants/presentation-card-constants";
 
 const PresentationCard = () => {
+  const { currentLanguage } = useCurrentLanguage();
+  const { contactMeButtonLabel, jobTitle } =
+    presentationCardConstants[currentLanguage];
   return (
     <section id="home" className="navigation_section xl:fixed  xl:w-1/4">
       <RevealAnimation type="left">
@@ -20,8 +25,7 @@ const PresentationCard = () => {
           </video>
           <div className="flex h-full flex-col justify-center">
             <h1 className="mt-3 text-4xl font-bold">Nicolás Bolaños Castro</h1>
-            {/* <img src='/src/assets/animoji-FA.webp' width='40px' height='40px'/> */}
-            <h2 className="mt-3 text-xl">Web UI Developer</h2>
+            <h2 className="mt-3 text-xl">{jobTitle}</h2>
             <p className="mt-3 text-sm text-brandColors-text">
               nicolas.bolanos97@gmail.com
             </p>
@@ -34,7 +38,7 @@ const PresentationCard = () => {
               href="mailto:nicolas.bolanos97@gmail.com"
               className="mx-auto mt-5 cursor-pointer rounded-md border border-cyan-200 px-10 py-5 text-lg font-bold text-cyan-200 shadow-slate-950 transition hover:-translate-y-1 hover:shadow-[0_4px_0_0] hover:shadow-cyan-200 xl:mt-14"
             >
-              Contact Me!
+              {contactMeButtonLabel}
             </a>
           </div>
         </div>

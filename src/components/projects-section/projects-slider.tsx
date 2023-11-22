@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { projects } from "../../data/projects";
 import { Carousel } from "react-responsive-carousel";
 import ProjectSection from "./project-section.component";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
@@ -7,10 +6,18 @@ import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
 import SectionTitle from "../shared/section-title.component";
 import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 import RevealAnimation from "../shared/reveal-animation.component";
+import { Project, Projects } from "../../types/contentTypes";
+import useContentTranslation from "../../hooks/useContentTranslation";
+import useCurrentLanguage from "../../hooks/useCurrentLanguage";
+import { projectsSectionConstants } from "./constants/projects-section-constants";
 
 const ProjectsSlider = () => {
   const [activeSlideIdx, setActiveSlideIdx] = useState<number>(0);
   const { isMobile, isTablet, isTabletLarge } = useCurrentBreakpoint();
+  const projectsContent = useContentTranslation<Projects>("projects");
+  const { currentLanguage } = useCurrentLanguage();
+  const { sectionTitle } = projectsSectionConstants[currentLanguage];
+  const projects = Object.values(projectsContent) as Project[];
 
   const renderCarouselArrow =
     (type: "next" | "prev") =>
@@ -47,7 +54,7 @@ const ProjectsSlider = () => {
         </div>
       );
     });
-  }, [activeSlideIdx]);
+  }, [activeSlideIdx, projects]);
 
   const onCarouselChange = (index: number) => {
     setActiveSlideIdx(index);
@@ -66,7 +73,7 @@ const ProjectsSlider = () => {
 
   return (
     <section id="projects" className="navigation_section">
-      <SectionTitle Icon={CodeBracketSquareIcon} title="Personal Projects" />
+      <SectionTitle Icon={CodeBracketSquareIcon} title={sectionTitle} />
       <RevealAnimation type="down">
         <Carousel
           showStatus={false}

@@ -1,0 +1,68 @@
+{
+  "about": {
+    "content": [
+      "of software development experience working within cross-functional agile teams. Proficient in web development, specializing in front-end technologies like JavaScript, TypeScript, and ReactJS ⚛️. Consistently delivering business-centered solutions prioritizing optimal user experience, performance and clean and scalable code.",
+      "Passionate about programming ⌨️, technology, and creating digital products to solve society's problems, improve their productivity or their quality of life in general. Dedicated to improving the experience of users as much as for developers through understandable, scalable and intuitive code, and to the continuous learning for personal and professional growth. Enthusiast about video games 🎮 and creating them both in development and design.",
+      "Always willing to take on new challenges! 🧑‍💻"
+    ]
+  },
+  "experiences": {
+    "globantColsubsidio": {
+      "date": "Aug. 2023 - Present",
+      "jobTitle": "Web UI Developer",
+      "duties": "Development of the ‘piscilago.com’ website redesign from Colsubsidio. Creation of reusable react components to be implemented throughout the business' multiple systems. Responsible for the timely delivery of responsive and optimized components by constantly communicating with the development, product, design and testing teams to ensure compliance with design, development and business guidelines. Actively looking for improvements in the proposed solutions to maintain scalable and understandable code.",
+      "achievements": [
+        "Successful delivery of a new purchasing experience, integrated with services for prices retrieval, user information and payment.",
+        "Work related to the compliance of WCAG 2.1 AA level criteria of accessibility for the new purchasing experience."
+      ]
+    },
+    "globantPvolve": {
+      "date": "Dec. 2021 - Jul. 2021",
+      "jobTitle": "Web UI Developer",
+      "duties": "Development of new features for the ‘app.pvolve.com’ website. Responsible for the timely delivery of responsive and optimized react components by making use of good practices and coding standards. Contributed to business logic compliance and improvements in performance of the company's web pages.",
+      "achievements": [
+        "Creation of a responsive web page from scratch with NextJS for the display of the company's information about physical training locations using Contentful as CMS and multiple integrations such as google maps and a fitness software platform for membership and reservations management.",
+        "Creation of a responsive web page from scratch using NextJS and Contentful as well to display live virtual classes for reservation and access.",
+        "Migration of a web app from Gatsby to NextJS with the purpose of changing the design and improving the performance. Web app used to access streaming content on demand as well as displaying information of workouts and users progress.",
+        "Integration of Segment as a tool for analytics for the front end processes.",
+        "Worked with endpoints managed by serverless framework in typescript, for proxying requests  between web app and Contentful to map properties and sanitize information, also worked with contentful-migration library for managing deployment of different environments inside Contentful."
+      ]
+    },
+    "Defytek": {
+      "date": "Jul. 2020 - Dec. 2021",
+      "jobTitle": "Development and Support Engineer",
+      "duties": "Development for the products CariAI and ION, both AI based products. Responsible for delivering and maintaining chatbot based solutions in CariAI. Developer for the frontend used in ION, an intelligent document processing tool.",
+      "achievements": [
+        "Successful deliveries for various clients of chat bot related products developed with PHP.",
+        "Development of a frontend tool for validation of information related to detecting elements from medical formulas with machine learning.",
+        "Implemented multiple functionalities for users to manipulate information in an interactive map library, for the validation of machine learning extracted information, using vanilla javascript."
+      ]
+    },
+    "Siemens": {
+      "date": "Jan. 2020 - Jul. 2020",
+      "jobTitle": "University Student Intern",
+      "duties": "Responsible for the development of an app to automate processes for a transformers factory protocols.",
+      "achievements": [
+        "Development of a Xamarin application for the CRUD of test protocols and their completion.",
+        "Gathering of requirements for a test protocols digitization project.",
+        "Creation of a SQL server database for the test protocols digitization project requirements."
+      ]
+    }
+  },
+  "projects": {
+    "CS50FinalProject": {
+      "title": "CS50 Game Development Final Project",
+      "description": "Final project for the CS50’s Harvard Introduction to Game Development. Game with randomized terrain generation and some basic RPG and final boss mechanics.",
+      "image": {
+        "alt": "Image of CS50 final project game"
+      }
+    },
+    "PortfolioWebSite": {
+      "title": "Website Portfolio",
+      "description": "Portfolio to contain and keep track of anything related to work and personal projects. Built and designed from scratch.",
+      "image": {
+        "alt": "Image of web portfolio"
+      }
+    }
+  }
+}

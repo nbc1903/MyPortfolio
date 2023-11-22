@@ -1,0 +1,69 @@
+{
+  "about": {
+    "content": [
+      "de experiencia en desarrollo de software trabajando junto a equipos multidisciplinarios en entornos ágiles. Enfocado en el desarrollo web, especialmente en tecnologías front-end como JavaScript, TypeScript y ReactJS ⚛️. Consistentemente entregando soluciones centradas en el negocio priorizando la óptima experiencia de usuario y la producción de código limpio y escalable.",
+      "Apasionado de la programación ⌨️, la tecnología y la creación de productos digitales que solucionen problemas de la sociedad y mejoren su productividad y calidad de vida. Dedicado a mejorar la experiencia de usuarios y desarrolladores por medio de código comprensible, escalable e intuitivo, y al aprendizaje continuo para el crecimiento personal y profesional. Entusiasta de los videojuegos 🎮 y de su creación tanto en diseño como en desarrollo.",
+      "Siempre dispuesto a asumir nuevos retos! 🧑‍💻"
+    ]
+  },
+
+  "experiences": {
+    "globantColsubsidio": {
+      "date": "Ago. 2023 - Presente",
+      "jobTitle": "Web UI Developer",
+      "duties": "Desarrollo del rediseño para la página web ‘piscilago.com’ de Colsubsidio. Creación de componentes en React reutilizables para todos los sistemas del negocio. Responsable de la entrega oportuna de componentes adaptables y optimizados por medio de constante comunicación con los equipos de producto, diseño y pruebas para garantizar el cumplimiento de los lineamientos de diseño y lógica de negocio. Activamente en búsqueda de mejoras en los planteamientos propuestos para la entrega de código fácilmente escalable y comprensible.",
+      "achievements": [
+        "Entrega exitosa de un flujo de compra para la página de piscilago, integrado con servicios de tarifas, información de usuario, y pago.",
+        "Trabajo relacionado al cumplimiento de los criterios de nivel AA de WCAG 2.1 en accesibilidad para el flujo de compra."
+      ]
+    },
+    "globantPvolve": {
+      "date": "Dic. 2021 - Jul. 2021",
+      "jobTitle": "Web UI Developer",
+      "duties": "Desarrollo de nuevas funcionalidades para la página web ‘app.pvolve.com’. Responsable de la entrega oportuna de componentes adaptables y optimizados en React mediante el uso de buenas prácticas y seguimiento de los estándares de codificación del proyecto. Contribuido al cumplimiento de las reglas de negocio y a la mejora del rendimiento de la página web.",
+      "achievements": [
+        "Desarrollo de página web adaptable con NextJS para desplegar información sobre las ubicaciones físicas de entrenamiento de la compañía. Integrado con Contentful para manejo del contenido, google maps para obtener la ubicación del sitio y un software para el manejo de membresías y reservaciones en sitio.",
+        "Desarrollo de página web adaptable con NextJS para el despliegue de información sobre clases virtuales en vivo, su reservación y su acceso. Integrado con Contentful y software de manejo de membresías y reservaciones",
+        "Migración exitosa de Gatsby a NextJS de una página web, dedicada al despliegue de contenido en formato de video y progreso del usuario en sus entrenamientos, con el propósito de mejorar el diseño y rendimiento de la página web.",
+        "Integración de Segment como herramienta de analítica para las interacciones de la página web",
+        "Trabajo relacionado al desarrollo de endpoints administrados por serverless framework en typescript. Utilizados como intermediador entre Contentful y la aplicación web para el mapeo de sus propiedades. Así mismo se trabajó con contentful-migration para el correcto despliegue de los ambientes en Contentful."
+      ]
+    },
+    "Defytek": {
+      "date": "Jul. 2020 - Dic. 2021",
+      "jobTitle": "Ingeniero de soporte y desarrollo",
+      "duties": "Desarrollo para el producto ION y CariAI ambos productos basados en IA. Responsable de la entrega y mantenimiento de soluciones basadas en chatbots de CariAI. Desarrollador para la interfaz de ION, herramienta inteligente para el procesamiento de documentos",
+      "achievements": [
+        "Entrega exitosa y oportuna a varios clientes de CariAI en soluciones basadas en chat bots haciendo uso de PHP para el desarrollo de scripts",
+        "Desarrollo de herramienta de front-end para la validación de información relacionada a la detección de elementos, por medio de machine learning, en formulas médicas ",
+        "Implementación de multiples funcionalidades para la interacción del usuario con una librería de mapas sobre información extraída de una IA."
+      ]
+    },
+    "Siemens": {
+      "date": "Ene. 2020 - Jul. 2020",
+      "jobTitle": "University Student Intern",
+      "duties": "Responsable del desarrollo de una aplicación para automatizar procesos de protocolos de pruebas en una fábrica de transformadores de energía.",
+      "achievements": [
+        "Desarrollo de una aplicación con Xamarin para el CRUD de protocolos de pruebas y su registro.",
+        "Levantamiento de requerimientos para el proyecto de digitalización de protocolos de pruebas.",
+        "Creación de una base de datos en SQL server para aplicación Xamarin."
+      ]
+    }
+  },
+  "projects": {
+    "CS50FinalProject": {
+      "title": "CS50 Desarrollo de Videojuegos: Proyecto Final",
+      "description": "Proyecto final para el curso ‘CS50's Harvard Introduction to Game Development’. Juego con generación de terreno aleatorio por nivel y mecánicas básicas de un RPG y jefe final.",
+      "image": {
+        "alt": "Imagen de juego para proyecto final CS50"
+      }
+    },
+    "PortfolioWebSite": {
+      "title": "Página web de portafolio",
+      "description": "Portafolio para contener toda la información relacionada a proyectos personales y trabajo. Diseñado y construido desde cero.",
+      "image": {
+        "alt": "Imagen de portafolio web"
+      }
+    }
+  }
+}

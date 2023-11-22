@@ -1,7 +1,6 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import MenuButton from "./menu-button.component";
 import { menuItems } from "../../data/menu";
-//import useScrollDirection from "../../hooks/useScrollDirection";
 import useScreenResize from "../../hooks/useScreenResize";
 import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
 import LanguageButton from "./language-button.component";
@@ -10,7 +9,6 @@ import RevealAnimation from "../shared/reveal-animation.component";
 const HeaderMenu = () => {
   const menuSelectBackdrop = useRef<HTMLDivElement>(null);
   const [selectedMenuTitle, setSelectedMenuTitle] = useState<string>("");
-  //const scrollDirection = useScrollDirection();
   const screenWidth = useScreenResize();
   const { isDesktopLarge, isDesktopExtraLarge } = useCurrentBreakpoint();
 
@@ -20,7 +18,7 @@ const HeaderMenu = () => {
     setSelectedMenuTitle(!isUpDesktop ? "home" : "about");
   }, [isUpDesktop]);
 
-  const moveMenuSelectBackdrop = () => {
+  const moveMenuSelectBackdrop = useCallback(() => {
     if (menuSelectBackdrop.current) {
       const selectedMenuElement = document.getElementById(
         `menu-button-${selectedMenuTitle}`,
@@ -35,7 +33,7 @@ const HeaderMenu = () => {
         }
       }
     }
-  };
+  }, [isUpDesktop, selectedMenuTitle]);
 
   useEffect(() => {
     const navigationSectionsChangeMenu = () => {
@@ -68,7 +66,7 @@ const HeaderMenu = () => {
 
   useEffect(() => {
     moveMenuSelectBackdrop();
-  }, [selectedMenuTitle, screenWidth]);
+  }, [selectedMenuTitle, screenWidth, moveMenuSelectBackdrop]);
 
   const menuItemSelect = (selectedMenuTitle: string) => () => {
     setSelectedMenuTitle(selectedMenuTitle);

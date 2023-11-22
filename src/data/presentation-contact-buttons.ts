@@ -1,6 +1,5 @@
 import { ReactComponent as GithubLogo } from "../assets/github.svg";
 import { ReactComponent as LinkedInLogo } from "../assets/linkedin.svg";
-//import { ReactComponent as EmailLogo } from "../assets/email.svg";
 
 export const presentationContactButtons = [
   {
