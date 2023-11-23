@@ -3,6 +3,7 @@ import ChipComponent from "../shared/chip.component";
 import RevealAnimation from "../shared/reveal-animation.component";
 import useCurrentLanguage from "../../hooks/useCurrentLanguage";
 import { experiencesSectionConstants } from "./constants/experiences-section-constants";
+import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
 
 interface JobExperienceSectionProps {
   date: string;
@@ -21,6 +22,7 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
   achievements,
   tags,
 }) => {
+  const { isMobile } = useCurrentBreakpoint();
   const { currentLanguage } = useCurrentLanguage();
   const { tagsLabel } = experiencesSectionConstants[currentLanguage];
   return (
@@ -28,12 +30,17 @@ const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
       <section className="flex flex-col">
         <div className="flex items-center">
           <h2 className="text-lg font-bold">{company}</h2>
-          <p className="ml-auto text-xs font-semibold text-brandColors-text">
-            {date}
-          </p>
+          {!isMobile && (
+            <p className="ml-auto text-xs font-semibold text-brandColors-text">
+              {date}
+            </p>
+          )}
         </div>
-
+        {isMobile && (
+          <p className="text-xs font-semibold text-brandColors-text">{date}</p>
+        )}
         <h3 className="mb-2 text-sm font-semibold">{jobTitle}</h3>
+
         <p className="mb-2 text-sm leading-normal text-brandColors-text">
           {duties}
         </p>

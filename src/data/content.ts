@@ -41,7 +41,7 @@ export const content = {
         "NextJS 13",
         "Material UI",
         "Sass",
-        "Css Modules",
+        "CSS Modules",
         "Styled Components",
       ],
     },
@@ -67,7 +67,7 @@ export const content = {
     },
     Siemens: {
       company: "Siemens S.A.",
-      tags: ["Xamarin", "C#", ".NET", "MVC architecture"],
+      tags: ["Xamarin", "C#", ".NET", "MVC"],
     },
   },
 };

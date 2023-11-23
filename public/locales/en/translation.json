@@ -10,7 +10,7 @@
     "globantColsubsidio": {
       "date": "Aug. 2023 - Present",
       "jobTitle": "Web UI Developer",
-      "duties": "Development of the ‘piscilago.com’ website redesign from Colsubsidio. Creation of reusable react components to be implemented throughout the business' multiple systems. Responsible for the timely delivery of responsive and optimized components by constantly communicating with the development, product, design and testing teams to ensure compliance with design, development and business guidelines. Actively looking for improvements in the proposed solutions to maintain scalable and understandable code.",
+      "duties": "Development of the ‘piscilago.com’ website's redesign from Colsubsidio. Creation of reusable react components to be implemented throughout the business' multiple systems. Responsible for the timely delivery of responsive and optimized components by constantly communicating with the development, product, design and testing teams to ensure compliance with the business' guidelines. Actively looking for improvements in the proposed solutions to maintain scalable and understandable code.",
       "achievements": [
         "Successful delivery of a new purchasing experience, integrated with services for prices retrieval, user information and payment.",
         "Work related to the compliance of WCAG 2.1 AA level criteria of accessibility for the new purchasing experience."
@@ -31,7 +31,7 @@
     "Defytek": {
       "date": "Jul. 2020 - Dec. 2021",
       "jobTitle": "Development and Support Engineer",
-      "duties": "Development for the products CariAI and ION, both AI based products. Responsible for delivering and maintaining chatbot based solutions in CariAI. Developer for the frontend used in ION, an intelligent document processing tool.",
+      "duties": "Development for the products CariAI and ION, both AI based products. Responsible for delivering and maintaining chatbot based solutions in CariAI using PHP in an architecture based on the phalcon framework. Developer for the frontend used in ION, an intelligent document processing tool.",
       "achievements": [
         "Successful deliveries for various clients of chat bot related products developed with PHP.",
         "Development of a frontend tool for validation of information related to detecting elements from medical formulas with machine learning.",

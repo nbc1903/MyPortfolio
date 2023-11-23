@@ -1,7 +1,7 @@
 {
   "about": {
     "content": [
-      "de experiencia en desarrollo de software trabajando junto a equipos multidisciplinarios en entornos ágiles. Enfocado en el desarrollo web, especialmente en tecnologías front-end como JavaScript, TypeScript y ReactJS ⚛️. Consistentemente entregando soluciones centradas en el negocio priorizando la óptima experiencia de usuario y la producción de código limpio y escalable.",
+      "de experiencia en desarrollo de software trabajando junto a equipos multidisciplinarios en entornos ágiles. Enfocado en el desarrollo web, especialmente en tecnologías front-end como JavaScript, TypeScript y ReactJS ⚛️. Consistentemente entregando soluciones centradas en el negocio, priorizando la óptima experiencia de usuario y la producción de código limpio y escalable.",
       "Apasionado de la programación ⌨️, la tecnología y la creación de productos digitales que solucionen problemas de la sociedad y mejoren su productividad y calidad de vida. Dedicado a mejorar la experiencia de usuarios y desarrolladores por medio de código comprensible, escalable e intuitivo, y al aprendizaje continuo para el crecimiento personal y profesional. Entusiasta de los videojuegos 🎮 y de su creación tanto en diseño como en desarrollo.",
       "Siempre dispuesto a asumir nuevos retos! 🧑‍💻"
     ]
@@ -32,7 +32,7 @@
     "Defytek": {
       "date": "Jul. 2020 - Dic. 2021",
       "jobTitle": "Ingeniero de soporte y desarrollo",
-      "duties": "Desarrollo para el producto ION y CariAI ambos productos basados en IA. Responsable de la entrega y mantenimiento de soluciones basadas en chatbots de CariAI. Desarrollador para la interfaz de ION, herramienta inteligente para el procesamiento de documentos",
+      "duties": "Desarrollo para el producto ION y CariAI ambos productos basados en IA. Responsable de la entrega y mantenimiento de soluciones basadas en chatbots de CariAI usando PHP sobre una arquitectura basada en el framework phalcon. Desarrollador para la interfaz de ION, herramienta inteligente para el procesamiento de documentos",
       "achievements": [
         "Entrega exitosa y oportuna a varios clientes de CariAI en soluciones basadas en chat bots haciendo uso de PHP para el desarrollo de scripts",
         "Desarrollo de herramienta de front-end para la validación de información relacionada a la detección de elementos, por medio de machine learning, en formulas médicas ",
