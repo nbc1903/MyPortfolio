@@ -4,15 +4,9 @@ import RevealAnimation from "../shared/reveal-animation.component";
 import useCurrentLanguage from "../../hooks/useCurrentLanguage";
 import { experiencesSectionConstants } from "./constants/experiences-section-constants";
 import useCurrentBreakpoint from "../../hooks/useCurrentBreakpoint";
+import { JobExperience } from "../../types/contentTypes";
 
-interface JobExperienceSectionProps {
-  date: string;
-  company: string;
-  jobTitle: string;
-  duties: string;
-  achievements?: string[];
-  tags: string[];
-}
+type JobExperienceSectionProps = JobExperience;
 
 const JobExperienceSection: React.FC<JobExperienceSectionProps> = ({
   date,

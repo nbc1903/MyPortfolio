@@ -1,5 +1,8 @@
 import PortfolioImage from "/src/assets/portfolio-image.png";
 import GameImage from "/src/assets/game-image.png";
+// import { ReactComponent as GameLogo } from "../assets/game-8-svgrepo-com.svg";
+import { ReactComponent as YoutubeLogo } from "../assets/youtube-svgrepo-com.svg";
+import { ReactComponent as GithubLogo } from "../assets/github.svg";
 
 export const content = {
   about: {
@@ -10,7 +13,16 @@ export const content = {
       image: {
         src: GameImage,
       },
-      link: "https://www.youtube.com/watch?v=rDrfh1IYnQY",
+      links: [
+        {
+          Icon: YoutubeLogo,
+          href: "https://www.youtube.com/watch?v=rDrfh1IYnQY",
+        },
+        {
+          Icon: GithubLogo,
+          href: "https://github.com/nbc1903/CS50_Final_Project",
+        },
+      ],
       tags: ["Unity", "C#"],
     },
     PortfolioWebSite: {
@@ -63,11 +75,20 @@ export const content = {
     },
     Defytek: {
       company: "Defytek SAS.",
-      tags: ["PHP", "VanillaJS", "HTML", "CSS", "Jquery", "Axios", "Leaflet"],
+      tags: [
+        "PHP",
+        "VanillaJS",
+        "HTML",
+        "CSS",
+        "Jquery",
+        "Axios",
+        "Leaflet",
+        "MySQL",
+      ],
     },
     Siemens: {
       company: "Siemens S.A.",
-      tags: ["Xamarin", "C#", ".NET", "MVC"],
+      tags: ["Xamarin", "C#", ".NET", "MVC", "SQL server"],
     },
   },
 };

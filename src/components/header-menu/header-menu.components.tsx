@@ -69,7 +69,9 @@ const HeaderMenu = () => {
   }, [selectedMenuTitle, screenWidth, moveMenuSelectBackdrop]);
 
   const menuItemSelect = (selectedMenuTitle: string) => () => {
-    setSelectedMenuTitle(selectedMenuTitle);
+    setTimeout(() => {
+      setSelectedMenuTitle(selectedMenuTitle);
+    }, 500);
   };
 
   const menuSelectedBackdropStylePosition = isUpDesktop

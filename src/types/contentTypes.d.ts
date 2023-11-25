@@ -41,6 +41,10 @@ export interface Project {
     src: string;
     alt: string;
   };
-  link: string;
+  link?: string;
+  links?: Array<{
+    Icon: React.ElementType;
+    href: string;
+  }>;
   tags: string[];
 }

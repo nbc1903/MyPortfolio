@@ -14,7 +14,7 @@ const PresentationCard = () => {
       <RevealAnimation type="left">
         <div className="relative flex flex-col items-center overflow-hidden rounded-3xl px-5 pb-8 pt-6 text-center shadow-lg shadow-gray-950 xl:h-[calc(100vh-160px)]">
           <video
-            className="absolute left-1/2 top-0 -z-10 h-full max-w-none -translate-x-1/2 opacity-10 blur-[2px] contrast-200 hue-rotate-60 min-[625px]:h-auto min-[625px]:w-full xl:h-full xl:w-auto"
+            className="absolute top-0 -z-10 h-full w-full object-cover opacity-10 blur-[2px] contrast-200 hue-rotate-60"
             preload="true"
             autoPlay
             loop
