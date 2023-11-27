@@ -71,10 +71,12 @@ export const content = {
         {
           Icon: YoutubeLogo,
           href: "https://www.youtube.com/watch?v=rDrfh1IYnQY",
+          alt: "youtube link",
         },
         {
           Icon: GithubLogo,
           href: "https://github.com/nbc1903/CS50_Final_Project",
+          alt: "github link",
         },
       ],
       tags: ["Unity", "C#"],
@@ -87,10 +89,12 @@ export const content = {
         {
           Icon: YoutubeLogo,
           href: "https://www.youtube.com/watch?v=d-Bo5diobIU",
+          alt: "youtube link",
         },
         {
           Icon: GameLogo,
           href: "https://itch.io/jam/gmtk-2021/rate/1086922",
+          alt: "game link",
         },
       ],
       tags: ["Unity", "C#"],

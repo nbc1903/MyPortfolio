@@ -64,8 +64,10 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
 
           {links && (
             <div className="flex gap-3">
-              {links.map(({ href, Icon }) => (
+              {links.map(({ href, Icon, alt }) => (
                 <a
+                  key={`${title} ${alt}`}
+                  title={`${title} ${alt}`}
                   href={href}
                   className={
                     isAvailable ? "group/button" : "pointer-events-none"
