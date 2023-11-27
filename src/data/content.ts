@@ -1,6 +1,9 @@
 import PortfolioImage from "/src/assets/portfolio-image.png";
 import CS50GameImage from "/src/assets/cs50-game-image.png";
 import MultiverseBoundImage from "/src/assets/multiverse-bound-image.webp";
+import CS50ChallengesImage from "/src/assets/cs50-challenges-image.webp";
+import SlendermanGameImage from "/src/assets/slenderman-de-la-sabana-image.webp";
+import ThalKnightImage from "/src/assets/thal-knight-image.webp";
 import { ReactComponent as GameLogo } from "../assets/game-8-svgrepo-com.svg";
 import { ReactComponent as YoutubeLogo } from "../assets/youtube-svgrepo-com.svg";
 import { ReactComponent as GithubLogo } from "../assets/github.svg";
@@ -44,7 +47,7 @@ export const content = {
         "Confluence",
       ],
     },
-    Defytek: {
+    defytek: {
       company: "Defytek SAS.",
       tags: [
         "PHP",
@@ -57,13 +60,13 @@ export const content = {
         "MySQL",
       ],
     },
-    Siemens: {
+    siemens: {
       company: "Siemens S.A.",
       tags: ["Xamarin", "C#", ".NET", "MVC", "SQL server"],
     },
   },
   projects: {
-    CS50FinalProject: {
+    cS50FinalProject: {
       image: {
         src: CS50GameImage,
       },
@@ -81,7 +84,7 @@ export const content = {
       ],
       tags: ["Unity", "C#"],
     },
-    MultiverseBound: {
+    multiverseBound: {
       image: {
         src: MultiverseBoundImage,
       },
@@ -99,7 +102,28 @@ export const content = {
       ],
       tags: ["Unity", "C#"],
     },
-    PortfolioWebSite: {
+    slendermanSabana: {
+      image: {
+        src: SlendermanGameImage,
+      },
+      link: "https://nicolasbc1903.itch.io/slenderman-de-la-sabana",
+      tags: ["Unity", "C#", "Blender"],
+    },
+    thalKnight: {
+      image: {
+        src: ThalKnightImage,
+      },
+      link: "https://nicolasbc1903.itch.io/thal-knight",
+      tags: ["Unity", "C#"],
+    },
+    cS50Challenges: {
+      image: {
+        src: CS50ChallengesImage,
+      },
+      link: "https://www.youtube.com/playlist?list=PL4Y-StkOoFMyAIgbNFlvSrEAIJ94PvyBN",
+      tags: ["Unity", "C#", "Love2D", "LUA"],
+    },
+    portfolioWebSite: {
       image: {
         src: PortfolioImage,
       },

@@ -12,8 +12,8 @@ export interface About {
 export type JobExperiencesKey =
   | "globantColsubsidio"
   | "globantPvolve"
-  | "Defytek"
-  | "Siemens";
+  | "defytek"
+  | "siemens";
 
 export interface JobExperiences {
   [jobExperience: JobExperienceKey]: JobExperience;
@@ -28,7 +28,13 @@ export interface JobExperience {
   tags: string[];
 }
 
-export type ProjectsKey = "cS50FinalProject" | "portfolioWebSite";
+export type ProjectsKey =
+  | "cS50FinalProject"
+  | "multiverseBound"
+  | "slendermanSabana"
+  | "cS50Challenges"
+  | "thalKnight"
+  | "portfolioWebSite";
 
 export interface Projects {
   [project: ProjectsKey]: Project;

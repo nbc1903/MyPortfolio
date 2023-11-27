@@ -30,7 +30,7 @@
         "Trabajo relacionado al desarrollo de endpoints administrados por serverless framework en typescript. Utilizados como intermediador entre Contentful y la aplicación web para el mapeo de sus propiedades. Así mismo se trabajó con contentful-migration para el correcto despliegue de los ambientes en Contentful."
       ]
     },
-    "Defytek": {
+    "defytek": {
       "date": "Jul. 2020 - Dic. 2021",
       "jobTitle": "Ingeniero de soporte y desarrollo",
       "duties": "Desarrollo para el producto ION y CariAI ambos productos basados en IA. Responsable de la entrega y mantenimiento de soluciones basadas en chatbots de CariAI usando PHP sobre una arquitectura basada en el framework phalcon. Desarrollador para la interfaz de ION, herramienta inteligente para el procesamiento de documentos",
@@ -40,7 +40,7 @@
         "Implementación de multiples funcionalidades para la interacción del usuario con una librería de mapas sobre información extraída de una IA."
       ]
     },
-    "Siemens": {
+    "siemens": {
       "date": "Ene. 2020 - Jul. 2020",
       "jobTitle": "University Student Intern",
       "duties": "Responsable del desarrollo de una aplicación para automatizar procesos de protocolos de pruebas en una fábrica de transformadores de energía.",
@@ -52,21 +52,42 @@
     }
   },
   "projects": {
-    "CS50FinalProject": {
+    "cS50FinalProject": {
       "title": "CS50 Desarrollo de Videojuegos: Proyecto Final",
       "description": "Proyecto final para el curso ‘CS50's Harvard Introduction to Game Development’. Juego con generación de terreno aleatorio por nivel y mecánicas básicas de un RPG y jefe final.",
       "image": {
         "alt": "Imagen de juego para proyecto final CS50"
       }
     },
-    "MultiverseBound": {
+    "multiverseBound": {
       "title": "GMTK 2021 Game Jam: Multiverse Bound",
       "description": "Juego creado durante un fin de semana para la temática 'Joined Together (Unidos)'. Diseñado con mecánicas de plataformas, jefe final, cámara lenta y una idea original de intercambio de armas en mundos paralelos.",
       "image": {
         "alt": "Imagen del juego Multiverse Bound"
       }
     },
-    "PortfolioWebSite": {
+    "slendermanSabana": {
+      "title": "Proyecto universitario: Slenderman de La Sabana",
+      "description": "Basado en el popular juego slenderman, simula el comportamiento del enemigo en el mismo juego persiguiendo al jugador por el mapa, el cual está modelado de la universidad misma.",
+      "image": {
+        "alt": "Imagen de juego Slenderman de la Sabana"
+      }
+    },
+    "thalKnight": {
+      "title": "Desarrollo de Videojuegos en Unity: Una Introducción, Universidad de los Andes: Proyecto final",
+      "description": "Juego creado como proyecto final del curso. Juego de plataformas en 2D con mecánicas para mover objetos, bloquear ataques, y un ataque especial.",
+      "image": {
+        "alt": "Imagen de juego Thal knight"
+      }
+    },
+    "cS50Challenges": {
+      "title": "CS50 Desarrollo de videojuegos: retos",
+      "description": "Juegos desarrollados para el curso de Harvard, principalmente con Unity y Love2D para aprender los básico del desarrollo de videojuegos e implementar mecánicas populares.",
+      "image": {
+        "alt": "Imagen de los retos para CS50"
+      }
+    },
+    "portfolioWebSite": {
       "title": "Página web de portafolio",
       "description": "Portafolio para contener toda la información relacionada a proyectos personales y trabajo. Diseñado y construido desde cero.",
       "image": {
