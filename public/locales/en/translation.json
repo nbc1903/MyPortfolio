@@ -10,10 +10,11 @@
     "globantColsubsidio": {
       "date": "Aug. 2023 - Present",
       "jobTitle": "Web UI Developer",
-      "duties": "Development of the ‘piscilago.com’ website's redesign from Colsubsidio. Creation of reusable react components to be implemented throughout the business' multiple systems. Responsible for the timely delivery of responsive and optimized components by constantly communicating with the development, product, design and testing teams to ensure compliance with the business' guidelines. Actively looking for improvements in the proposed solutions to maintain scalable and understandable code.",
+      "duties": "Development of the ‘piscilago.com’ website's redesign from Colsubsidio. Responsible for the timely delivery of responsive and optimized components through constant communication with the development, product, design and testing teams to ensure compliance with the business' guidelines. Actively looking for improvements in the proposed solutions to maintain scalable and understandable code.",
       "achievements": [
         "Successful delivery of a new purchasing experience, integrated with services for prices retrieval, user information and payment.",
-        "Work related to the compliance of WCAG 2.1 AA level criteria of accessibility for the new purchasing experience."
+        "Work related to the compliance of WCAG 2.1 AA level criteria of accessibility for the new purchasing experience.",
+        "Creation of a UI Components library with reusable, configurable and accessible react components for the company to implement throughout its multiple systems."
       ]
     },
     "globantPvolve": {
@@ -55,6 +56,13 @@
       "description": "Final project for the CS50’s Harvard Introduction to Game Development. Game with randomized terrain generation and some basic RPG and final boss mechanics.",
       "image": {
         "alt": "Image of CS50 final project game"
+      }
+    },
+    "MultiverseBound": {
+      "title": "GMTK 2021 Game Jam: Multiverse Bound",
+      "description": "Game created during a weekend for the theme 'Joined Together'. Designed with platformer, final boss, slow motion and an original weapon sharing in parallel worlds mechanics",
+      "image": {
+        "alt": "Image of Multiverse Bound game"
       }
     },
     "PortfolioWebSite": {

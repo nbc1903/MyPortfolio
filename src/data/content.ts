@@ -1,6 +1,7 @@
 import PortfolioImage from "/src/assets/portfolio-image.png";
-import GameImage from "/src/assets/game-image.png";
-// import { ReactComponent as GameLogo } from "../assets/game-8-svgrepo-com.svg";
+import CS50GameImage from "/src/assets/cs50-game-image.png";
+import MultiverseBoundImage from "/src/assets/multiverse-bound-image.webp";
+import { ReactComponent as GameLogo } from "../assets/game-8-svgrepo-com.svg";
 import { ReactComponent as YoutubeLogo } from "../assets/youtube-svgrepo-com.svg";
 import { ReactComponent as GithubLogo } from "../assets/github.svg";
 
@@ -11,7 +12,7 @@ export const content = {
   projects: {
     CS50FinalProject: {
       image: {
-        src: GameImage,
+        src: CS50GameImage,
       },
       links: [
         {
@@ -21,6 +22,22 @@ export const content = {
         {
           Icon: GithubLogo,
           href: "https://github.com/nbc1903/CS50_Final_Project",
+        },
+      ],
+      tags: ["Unity", "C#"],
+    },
+    MultiverseBound: {
+      image: {
+        src: MultiverseBoundImage,
+      },
+      links: [
+        {
+          Icon: YoutubeLogo,
+          href: "https://www.youtube.com/watch?v=d-Bo5diobIU",
+        },
+        {
+          Icon: GameLogo,
+          href: "https://itch.io/jam/gmtk-2021/rate/1086922",
         },
       ],
       tags: ["Unity", "C#"],
@@ -55,6 +72,7 @@ export const content = {
         "Sass",
         "CSS Modules",
         "Styled Components",
+        "Figma",
       ],
     },
     globantPvolve: {
@@ -68,6 +86,7 @@ export const content = {
         "CSS",
         "Redux-Sagas",
         "Styled Components",
+        "Figma",
         "Material UI",
         "Jira",
         "Confluence",

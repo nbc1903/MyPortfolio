@@ -11,10 +11,11 @@
     "globantColsubsidio": {
       "date": "Ago. 2023 - Presente",
       "jobTitle": "Web UI Developer",
-      "duties": "Desarrollo del rediseño para la página web ‘piscilago.com’ de Colsubsidio. Creación de componentes en React reutilizables para todos los sistemas del negocio. Responsable de la entrega oportuna de componentes adaptables y optimizados por medio de constante comunicación con los equipos de producto, diseño y pruebas para garantizar el cumplimiento de los lineamientos de diseño y lógica de negocio. Activamente en búsqueda de mejoras en los planteamientos propuestos para la entrega de código fácilmente escalable y comprensible.",
+      "duties": "Desarrollo del rediseño para la página web ‘piscilago.com’ de Colsubsidio. Responsable de la entrega oportuna de componentes adaptables y optimizados por medio de constante comunicación con los equipos de producto, diseño y pruebas para garantizar el cumplimiento de los lineamientos de diseño y lógica de negocio. Activamente en búsqueda de mejoras en los planteamientos propuestos para la entrega de código fácilmente escalable y comprensible.",
       "achievements": [
         "Entrega exitosa de un flujo de compra para la página de piscilago, integrado con servicios de tarifas, información de usuario, y pago.",
-        "Trabajo relacionado al cumplimiento de los criterios de nivel AA de WCAG 2.1 en accesibilidad para el flujo de compra."
+        "Trabajo relacionado al cumplimiento de los criterios de nivel AA de WCAG 2.1 en accesibilidad para el flujo de compra.",
+        "Entrega de librería de componentes en React configurables, reutilizables y accesibles para ser usados en los diferentes sistemas de la compañía."
       ]
     },
     "globantPvolve": {
@@ -56,6 +57,13 @@
       "description": "Proyecto final para el curso ‘CS50's Harvard Introduction to Game Development’. Juego con generación de terreno aleatorio por nivel y mecánicas básicas de un RPG y jefe final.",
       "image": {
         "alt": "Imagen de juego para proyecto final CS50"
+      }
+    },
+    "MultiverseBound": {
+      "title": "GMTK 2021 Game Jam: Multiverse Bound",
+      "description": "Juego creado durante un fin de semana para la temática 'Joined Together (Unidos)'. Diseñado con mecánicas de plataformas, jefe final, cámara lenta y una idea original de intercambio de armas en mundos paralelos.",
+      "image": {
+        "alt": "Imagen del juego Multiverse Bound"
       }
     },
     "PortfolioWebSite": {
