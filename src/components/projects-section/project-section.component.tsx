@@ -67,11 +67,13 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
               {links.map(({ href, Icon }) => (
                 <a
                   href={href}
-                  className="group/button"
+                  className={
+                    isAvailable ? "group/button" : "pointer-events-none"
+                  }
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <Icon className="h-6 w-6 hover:rotate-12 hover:scale-110 group-hover/button:fill-cyan-200" />
+                  <Icon className="h-6 w-6 transition-[transform,_colors] hover:rotate-12 hover:scale-110 group-hover/button:fill-cyan-200" />
                 </a>
               ))}
             </div>

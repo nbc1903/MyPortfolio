@@ -95,7 +95,7 @@ const HeaderMenu = () => {
                     className={`z-20 ${
                       selectedMenuTitle === menuItem.title
                         ? "pointer-events-none [&_svg]:drop-shadow-neon"
-                        : "transition-all hover:scale-125 hover:text-cyan-500"
+                        : "transition-all hover:scale-125 hover:text-cyan-200"
                     }`}
                   >
                     <MenuButton

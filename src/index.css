@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply flex flex-col bg-gradient-to-br from-gray-800 to-gray-850  p-5 text-white xl:px-10 xl:py-20;
+  @apply flex flex-col bg-gradient-to-br from-gray-800 to-gray-850 p-5 text-white xl:px-10 xl:py-20;
   font-family: monospace;
 }
 

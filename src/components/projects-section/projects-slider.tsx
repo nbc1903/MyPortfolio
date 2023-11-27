@@ -76,6 +76,7 @@ const ProjectsSlider = () => {
       <SectionTitle Icon={CodeBracketSquareIcon} title={sectionTitle} />
       <RevealAnimation type="down">
         <Carousel
+          className="[&_.slider]:items-center"
           showStatus={false}
           showThumbs={false}
           centerMode={true}
