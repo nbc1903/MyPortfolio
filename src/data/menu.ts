@@ -1,4 +1,5 @@
 import {
+  AcademicCapIcon,
   BriefcaseIcon,
   CodeBracketSquareIcon,
   HomeIcon,
@@ -25,5 +26,10 @@ export const menuItems = [
     href: "#projects",
     title: "projects",
     icon: CodeBracketSquareIcon,
+  },
+  {
+    href: "#certificates",
+    title: "certificates",
+    icon: AcademicCapIcon,
   },
 ];

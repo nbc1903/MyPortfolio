@@ -13,7 +13,8 @@ import { projectsSectionConstants } from "./constants/projects-section-constants
 
 const ProjectsSlider = () => {
   const [activeSlideIdx, setActiveSlideIdx] = useState<number>(0);
-  const { isMobile, isTablet, isTabletLarge } = useCurrentBreakpoint();
+  const { isMobile, isTablet, isTabletLarge, isDesktop, isDesktopLarge } =
+    useCurrentBreakpoint();
   const projectsContent = useContentTranslation<Projects>("projects");
   const { currentLanguage } = useCurrentLanguage();
   const { sectionTitle } = projectsSectionConstants[currentLanguage];
@@ -63,9 +64,16 @@ const ProjectsSlider = () => {
   const slidePercentage = useMemo(() => {
     const desktopPercentage = projects.length < 3 ? 50 : 33.33;
     if (isMobile || isTablet) return 100;
-    if (isTabletLarge) return desktopPercentage;
+    if (isTabletLarge || isDesktop || isDesktopLarge) return 50;
     else return desktopPercentage;
-  }, [isMobile, isTablet, isTabletLarge, projects]);
+  }, [
+    isDesktop,
+    isDesktopLarge,
+    isMobile,
+    isTablet,
+    isTabletLarge,
+    projects.length,
+  ]);
 
   useEffect(() => {
     setActiveSlideIdx(0);

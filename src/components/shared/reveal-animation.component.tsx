@@ -45,6 +45,7 @@ const RevealAnimation: React.FC<RevealAnimationProps> = ({
       }}
       transition={{
         duration: 0.5,
+        delay: 0.3,
       }}
       initial="hidden"
       whileInView="visible"

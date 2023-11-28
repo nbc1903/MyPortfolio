@@ -48,7 +48,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({
           <div className="flex items-center">
             <h2 className={`text-left font-bold ${titleLinkClass}`}>{title}</h2>
             {showLinkInCard && (
-              <ArrowUpRightIcon className="ml-1 w-5 origin-bottom-left scale-0 transition-all duration-500 group-hover:scale-100 group-hover:animate-link group-hover:text-cyan-500 group-hover:[animation-delay:500ms]" />
+              <ArrowUpRightIcon className="ml-1 w-5 shrink-0 origin-bottom-left scale-0 transition-all duration-500 group-hover:scale-100 group-hover:animate-link group-hover:text-cyan-500 group-hover:[animation-delay:500ms]" />
             )}
           </div>
 

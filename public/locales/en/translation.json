@@ -93,5 +93,25 @@
         "alt": "Image of web portfolio"
       }
     }
+  },
+  "certificates": {
+    "algoExpertCert": {
+      "title": "Certificate for completing 100 question in AlgoExpert"
+    },
+    "andesGamesCert": {
+      "title": "Certificate for completing: Game Development in Unity: An introduction, offered by University of Los Andes"
+    },
+    "cloudEdxCert": {
+      "title": "Certificate for completing: Developing Cloud Applications with Node.js and React, offered by IBM"
+    },
+    "cs50GamesCert": {
+      "title": "Certificate for completing: CS50's Introduction to Game Development, offered by HarvardX"
+    },
+    "patternsUdemyCert": {
+      "title": "Certificate for completing: Design Patterns in Javascript and Typescript"
+    },
+    "reactUdemyCert": {
+      "title": "Certificate for completing: The Complete ReactJs Course - Basics to Advanced (2021)"
+    }
   }
 }

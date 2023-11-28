@@ -94,5 +94,25 @@
         "alt": "Imagen de portafolio web"
       }
     }
+  },
+  "certificates": {
+    "algoExpertCert": {
+      "title": "Certificado de AlgoExpert por completar 100 preguntas"
+    },
+    "andesGamesCert": {
+      "title": "Certificado por completar el curso: Desarrollo de Videojuegos en Unity: Una Introducción, de la Universidad de los Andes"
+    },
+    "cloudEdxCert": {
+      "title": "Certificado por completar el curso: Desarrollo de aplicaciones en la nube con Node.js y React, de IBM"
+    },
+    "cs50GamesCert": {
+      "title": "Certificado por completar el curso: Introducción al desarrollo de videojuegos CS50, de HarvardX"
+    },
+    "patternsUdemyCert": {
+      "title": "Certificado por completar el curso: Patrones de diseño en Javascript y Typescript"
+    },
+    "reactUdemyCert": {
+      "title": "Certificado por completar el curso: ReactJS básico a avanzado (2021)"
+    }
   }
 }

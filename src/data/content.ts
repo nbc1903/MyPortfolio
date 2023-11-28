@@ -4,6 +4,12 @@ import MultiverseBoundImage from "/src/assets/multiverse-bound-image.webp";
 import CS50ChallengesImage from "/src/assets/cs50-challenges-image.webp";
 import SlendermanGameImage from "/src/assets/slenderman-de-la-sabana-image.webp";
 import ThalKnightImage from "/src/assets/thal-knight-image.webp";
+import AlgoExpertCertImage from "/src/assets/cert-algoexpert.png";
+import AndesGamesCertImage from "/src/assets/cert-andes-games.png";
+import CloudEdxCertImage from "/src/assets/cert-cloud-edx-ibm.png";
+import CS50GamesCertImage from "/src/assets/cert-cs50-games.png";
+import PatternsUdemyCertImage from "/src/assets/cert-patrones-udemy.jpg";
+import ReactUdemyCertImage from "/src/assets/cert-react-udemy.jpg";
 import { ReactComponent as GameLogo } from "../assets/game-8-svgrepo-com.svg";
 import { ReactComponent as YoutubeLogo } from "../assets/youtube-svgrepo-com.svg";
 import { ReactComponent as GithubLogo } from "../assets/github.svg";
@@ -136,6 +142,32 @@ export const content = {
         "i18next",
         "TypeScript",
       ],
+    },
+  },
+  certificates: {
+    algoExpertCert: {
+      src: AlgoExpertCertImage,
+      href: "https://certificate.algoexpert.io/AE-9ca005bf1d",
+    },
+    andesGamesCert: {
+      src: AndesGamesCertImage,
+      href: "https://coursera.org/share/943cff5de6461a76951aabfb1aff97cc",
+    },
+    cloudEdxCert: {
+      src: CloudEdxCertImage,
+      href: "https://courses.edx.org/certificates/90819679e9374560bf0b1efefdca76c1?_gl=1*q6oceb*_ga*ODAwMTQ5ODg4LjE3MDExMTc2MzY.*_ga_D3KS4KMDT0*MTcwMTExOTU3OS4yLjAuMTcwMTExOTU3OS42MC4wLjA.",
+    },
+    cs50GamesCert: {
+      src: CS50GamesCertImage,
+      href: "https://courses.edx.org/certificates/aeb9d41b05a1413a81ec77a13156fe00?_gl=1*q6oceb*_ga*ODAwMTQ5ODg4LjE3MDExMTc2MzY.*_ga_D3KS4KMDT0*MTcwMTExOTU3OS4yLjAuMTcwMTExOTU3OS42MC4wLjA.",
+    },
+    patternsUdemyCert: {
+      src: PatternsUdemyCertImage,
+      href: "https://www.udemy.com/certificate/UC-b0ce4d87-89d0-4ab3-8688-66bc9be69b0b",
+    },
+    reactUdemyCert: {
+      src: ReactUdemyCertImage,
+      href: "https://www.udemy.com/certificate/UC-84788bae-97ad-46f4-b5da-30068463f483",
     },
   },
 };

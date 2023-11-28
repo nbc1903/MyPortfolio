@@ -2,6 +2,7 @@ export interface Content {
   about: About;
   experiences: JobExperiences;
   projects: Projects;
+  certificates: Certificates;
 }
 
 export interface About {
@@ -54,4 +55,22 @@ export interface Project {
     alt: string;
   }>;
   tags: string[];
+}
+
+export type CertificatesKey =
+  | "algoExpertCert"
+  | "andesGamesCert"
+  | "cloudEdxCert"
+  | "cs50GamesCert"
+  | "patternsUdemyCert"
+  | "reactUdemyCert";
+
+export interface Certificates {
+  [certificate: CertificatesKey]: Certificates;
+}
+
+export interface Certificate {
+  src: string;
+  href: string;
+  title: string;
 }
